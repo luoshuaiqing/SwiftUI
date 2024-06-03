@@ -22,7 +22,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             List(model.orders) { order in
-                Text(order.name)
+                OrderCellView(order: order)
             }
         }.task {
             await populateOrders()
