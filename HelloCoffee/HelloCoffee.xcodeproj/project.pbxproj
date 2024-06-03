@@ -10,6 +10,7 @@
 		586139CF2C0D42E10038E18C /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139CE2C0D42E10038E18C /* CoffeeModel.swift */; };
 		586139D42C0D75C30038E18C /* NumberFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139D32C0D75C30038E18C /* NumberFormatter+Extensions.swift */; };
 		586139D72C0D76430038E18C /* OrderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139D62C0D76430038E18C /* OrderCellView.swift */; };
+		586139DA2C0D76AE0038E18C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139D92C0D76AE0038E18C /* AppEnvironment.swift */; };
 		8D73ECAF28C2513D00D8D3DF /* HelloCoffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECAE28C2513D00D8D3DF /* HelloCoffeeApp.swift */; };
 		8D73ECB128C2513D00D8D3DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECB028C2513D00D8D3DF /* ContentView.swift */; };
 		8D73ECB328C2513E00D8D3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D73ECB228C2513E00D8D3DF /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		586139CE2C0D42E10038E18C /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
 		586139D32C0D75C30038E18C /* NumberFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		586139D62C0D76430038E18C /* OrderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCellView.swift; sourceTree = "<group>"; };
+		586139D92C0D76AE0038E18C /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		8D73ECAB28C2513C00D8D3DF /* HelloCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D73ECAE28C2513D00D8D3DF /* HelloCoffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoffeeApp.swift; sourceTree = "<group>"; };
 		8D73ECB028C2513D00D8D3DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		586139D82C0D76A60038E18C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				586139D92C0D76AE0038E18C /* AppEnvironment.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		8D73ECA228C2513C00D8D3DF = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		8D73ECAD28C2513C00D8D3DF /* HelloCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				586139D82C0D76A60038E18C /* Utils */,
 				586139D52C0D763E0038E18C /* Views */,
 				586139D22C0D75B70038E18C /* Extensions */,
 				8D73ECBF28C2521400D8D3DF /* Models */,
@@ -189,6 +200,7 @@
 				586139CF2C0D42E10038E18C /* CoffeeModel.swift in Sources */,
 				586139D42C0D75C30038E18C /* NumberFormatter+Extensions.swift in Sources */,
 				8D73ECAF28C2513D00D8D3DF /* HelloCoffeeApp.swift in Sources */,
+				586139DA2C0D76AE0038E18C /* AppEnvironment.swift in Sources */,
 				8D73ECC128C2522200D8D3DF /* Order.swift in Sources */,
 				8D73ECBE28C251C800D8D3DF /* WebService.swift in Sources */,
 			);
