@@ -20,16 +20,24 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack {
-            if model.orders.isEmpty {
-                Text("No orders available!").accessibilityIdentifier("noOrdersText")
-            } else {
-                List(model.orders) { order in
-                    OrderCellView(order: order)
+        NavigationStack {
+            VStack {
+                if model.orders.isEmpty {
+                    Text("No orders available!").accessibilityIdentifier("noOrdersText")
+                } else {
+                    List(model.orders) { order in
+                        OrderCellView(order: order)
+                    }
+                }
+            }.task {
+                await populateOrders()
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Add New Order") {
+                        
+                    }
                 }
             }
-        }.task {
-            await populateOrders()
         }
     }
 }

@@ -21,6 +21,8 @@ struct AddCoffeeView: View {
     @State private var coffeeSize: CoffeeSize = .medium
     @State private var errors: AddCoffeeErrors = AddCoffeeErrors()
     
+    @EnvironmentObject private var model: CoffeeModel
+    
     var isValid: Bool {
         errors = AddCoffeeErrors()
         
@@ -41,6 +43,15 @@ struct AddCoffeeView: View {
         }
         
         return errors.name.isEmpty && errors.price.isEmpty && errors.coffeeName.isEmpty
+    }
+    
+    private func placeOrder() async {
+        let order = Order(name: name, coffeeName: coffeeName, total: Double(price)!, size: coffeeSize)
+        do {
+            try await model.placeOrder(order)
+        } catch {
+            print(error)
+        }
     }
     
     var body: some View {
@@ -65,7 +76,9 @@ struct AddCoffeeView: View {
             
             Button("Place Order") {
                 if isValid {
-                    
+                    Task {
+                        await placeOrder()
+                    }
                 }
             }.accessibilityIdentifier("placeOrderButton")
                 .centerHorizontally()
