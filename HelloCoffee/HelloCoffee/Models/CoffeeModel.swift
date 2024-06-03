@@ -10,10 +10,10 @@ import Foundation
 @MainActor
 class CoffeeModel: ObservableObject {
 
-    let webService: Webservice
+    let webService: WebService
     @Published private(set) var orders: [Order] = []
     
-    init(webService: Webservice) {
+    init(webService: WebService) {
         self.webService = webService
     }
     

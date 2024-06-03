@@ -1,5 +1,5 @@
 //
-//  Webservice.swift
+//  WebService.swift
 //  HelloCoffee
 //
 //  Created by Mohammad Azam on 9/2/22.
@@ -13,7 +13,7 @@ enum NetworkError: Error {
     case badUrl
 }
 
-class Webservice {
+class WebService {
     
     func getOrders() async throws -> [Order] {
         

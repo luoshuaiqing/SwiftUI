@@ -12,7 +12,7 @@
 		8D73ECB128C2513D00D8D3DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECB028C2513D00D8D3DF /* ContentView.swift */; };
 		8D73ECB328C2513E00D8D3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D73ECB228C2513E00D8D3DF /* Assets.xcassets */; };
 		8D73ECB628C2513E00D8D3DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D73ECB528C2513E00D8D3DF /* Preview Assets.xcassets */; };
-		8D73ECBE28C251C800D8D3DF /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECBD28C251C800D8D3DF /* Webservice.swift */; };
+		8D73ECBE28C251C800D8D3DF /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECBD28C251C800D8D3DF /* WebService.swift */; };
 		8D73ECC128C2522200D8D3DF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECC028C2522200D8D3DF /* Order.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +23,7 @@
 		8D73ECB028C2513D00D8D3DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8D73ECB228C2513E00D8D3DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D73ECB528C2513E00D8D3DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		8D73ECBD28C251C800D8D3DF /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		8D73ECBD28C251C800D8D3DF /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		8D73ECC028C2522200D8D3DF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,7 +78,7 @@
 		8D73ECBC28C251BE00D8D3DF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				8D73ECBD28C251C800D8D3DF /* Webservice.swift */,
+				8D73ECBD28C251C800D8D3DF /* WebService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 				586139CF2C0D42E10038E18C /* CoffeeModel.swift in Sources */,
 				8D73ECAF28C2513D00D8D3DF /* HelloCoffeeApp.swift in Sources */,
 				8D73ECC128C2522200D8D3DF /* Order.swift in Sources */,
-				8D73ECBE28C251C800D8D3DF /* Webservice.swift in Sources */,
+				8D73ECBE28C251C800D8D3DF /* WebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
