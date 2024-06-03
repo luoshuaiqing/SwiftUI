@@ -12,6 +12,7 @@
 		586139D72C0D76430038E18C /* OrderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139D62C0D76430038E18C /* OrderCellView.swift */; };
 		586139DA2C0D76AE0038E18C /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139D92C0D76AE0038E18C /* AppEnvironment.swift */; };
 		586139E22C0D797C0038E18C /* HelloCoffeeE2ETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139E12C0D797C0038E18C /* HelloCoffeeE2ETests.swift */; };
+		586139EB2C0D7E260038E18C /* AddCoffeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586139EA2C0D7E260038E18C /* AddCoffeeView.swift */; };
 		8D73ECAF28C2513D00D8D3DF /* HelloCoffeeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECAE28C2513D00D8D3DF /* HelloCoffeeApp.swift */; };
 		8D73ECB128C2513D00D8D3DF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D73ECB028C2513D00D8D3DF /* ContentView.swift */; };
 		8D73ECB328C2513E00D8D3DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D73ECB228C2513E00D8D3DF /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 		586139D92C0D76AE0038E18C /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		586139DF2C0D797C0038E18C /* HelloCoffeeE2ETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloCoffeeE2ETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		586139E12C0D797C0038E18C /* HelloCoffeeE2ETests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoffeeE2ETests.swift; sourceTree = "<group>"; };
+		586139EA2C0D7E260038E18C /* AddCoffeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeView.swift; sourceTree = "<group>"; };
 		8D73ECAB28C2513C00D8D3DF /* HelloCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D73ECAE28C2513D00D8D3DF /* HelloCoffeeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloCoffeeApp.swift; sourceTree = "<group>"; };
 		8D73ECB028C2513D00D8D3DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				586139D62C0D76430038E18C /* OrderCellView.swift */,
+				586139EA2C0D7E260038E18C /* AddCoffeeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				586139D72C0D76430038E18C /* OrderCellView.swift in Sources */,
 				586139CF2C0D42E10038E18C /* CoffeeModel.swift in Sources */,
 				586139D42C0D75C30038E18C /* NumberFormatter+Extensions.swift in Sources */,
+				586139EB2C0D7E260038E18C /* AddCoffeeView.swift in Sources */,
 				8D73ECAF28C2513D00D8D3DF /* HelloCoffeeApp.swift in Sources */,
 				586139DA2C0D76AE0038E18C /* AppEnvironment.swift in Sources */,
 				8D73ECC128C2522200D8D3DF /* Order.swift in Sources */,
