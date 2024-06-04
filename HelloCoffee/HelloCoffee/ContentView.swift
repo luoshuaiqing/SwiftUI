@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var isPresented = false
     @EnvironmentObject private var model: CoffeeModel
     
     private func populateOrders() async {
@@ -31,11 +32,14 @@ struct ContentView: View {
                 }
             }.task {
                 await populateOrders()
-            }.toolbar {
+            }.sheet(isPresented: $isPresented, content: {
+                AddCoffeeView()
+            })
+            .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Add New Order") {
-                        
-                    }
+                        isPresented = true
+                    }.accessibilityIdentifier("addNewOrderButton")
                 }
             }
         }
