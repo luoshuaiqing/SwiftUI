@@ -55,34 +55,36 @@ struct AddCoffeeView: View {
     }
     
     var body: some View {
-        Form {
-            TextField("Name", text: $name)
-                .accessibilityIdentifier("name")
-            Text(errors.name).visible(!errors.name.isEmpty).font(.caption)
+        NavigationStack {
+            Form {
+                TextField("Name", text: $name)
+                    .accessibilityIdentifier("name")
+                Text(errors.name).visible(!errors.name.isEmpty).font(.caption)
+                    
+                TextField("Coffee name", text: $coffeeName)
+                    .accessibilityIdentifier("coffeeName")
+                Text(errors.coffeeName).visible(!errors.coffeeName.isEmpty).font(.caption)
                 
-            TextField("Coffee name", text: $coffeeName)
-                .accessibilityIdentifier("coffeeName")
-            Text(errors.coffeeName).visible(!errors.coffeeName.isEmpty).font(.caption)
-            
-            TextField("Price", text: $price)
-                .accessibilityIdentifier("price")
-            Text(errors.price).visible(!errors.price.isEmpty).font(.caption)
-            
-            Picker("Select size", selection: $coffeeSize) {
-                ForEach(CoffeeSize.allCases, id: \.rawValue) { size in
-                    Text(size.rawValue).tag(size)
-                }
-            }.pickerStyle(.segmented)
-            
-            Button("Place Order") {
-                if isValid {
-                    Task {
-                        await placeOrder()
+                TextField("Price", text: $price)
+                    .accessibilityIdentifier("price")
+                Text(errors.price).visible(!errors.price.isEmpty).font(.caption)
+                
+                Picker("Select size", selection: $coffeeSize) {
+                    ForEach(CoffeeSize.allCases, id: \.rawValue) { size in
+                        Text(size.rawValue).tag(size)
                     }
-                }
-            }.accessibilityIdentifier("placeOrderButton")
-                .centerHorizontally()
-        }
+                }.pickerStyle(.segmented)
+                
+                Button("Place Order") {
+                    if isValid {
+                        Task {
+                            await placeOrder()
+                        }
+                    }
+                }.accessibilityIdentifier("placeOrderButton")
+                    .centerHorizontally()
+            }
+        }.navigationTitle("Add Coffee")
     }
 }
 
