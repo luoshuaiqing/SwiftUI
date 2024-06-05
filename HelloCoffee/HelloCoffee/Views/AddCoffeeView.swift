@@ -56,6 +56,14 @@ struct AddCoffeeView: View {
         }
     }
     
+    func updateOrder(_ order: Order) async {
+        do {
+            try await model.updateOrder(order)
+        } catch {
+            print(error)
+        }
+    }
+    
     private func populateExistingOrder() {
         if let order {
             name = order.name
@@ -77,6 +85,8 @@ struct AddCoffeeView: View {
             let order = Order(name: name, coffeeName: coffeeName, total: Double(price)!, size: coffeeSize)
             await placeOrder(order)
         }
+        
+        dismiss()
     }
     
     var body: some View {
