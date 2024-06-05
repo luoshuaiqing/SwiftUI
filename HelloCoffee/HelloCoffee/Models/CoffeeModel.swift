@@ -23,6 +23,6 @@ class CoffeeModel: ObservableObject {
     
     func placeOrder(_ order: Order) async throws {
         let newOrder = try await webService.placeOrder(order: order)
-        orders.append(order)
+        orders.append(newOrder)
     }
 }

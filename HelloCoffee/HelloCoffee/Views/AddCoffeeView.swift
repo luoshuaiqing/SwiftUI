@@ -21,6 +21,7 @@ struct AddCoffeeView: View {
     @State private var coffeeSize: CoffeeSize = .medium
     @State private var errors: AddCoffeeErrors = AddCoffeeErrors()
     
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var model: CoffeeModel
     
     var isValid: Bool {
@@ -49,6 +50,7 @@ struct AddCoffeeView: View {
         let order = Order(name: name, coffeeName: coffeeName, total: Double(price)!, size: coffeeSize)
         do {
             try await model.placeOrder(order)
+            dismiss()
         } catch {
             print(error)
         }
