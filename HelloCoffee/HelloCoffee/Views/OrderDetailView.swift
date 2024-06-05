@@ -34,7 +34,7 @@ struct OrderDetailView: View {
                         Spacer()
                     }
                 }.sheet(isPresented: $isPresented, content: {
-                    AddCoffeeView()
+                    AddCoffeeView(order: order)
                 })
             }
             Spacer()
