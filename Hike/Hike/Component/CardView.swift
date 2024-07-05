@@ -45,10 +45,13 @@ struct CardView: View {
                         
                         Button {
                             print("The button was pressed.")
+                            isShowingSheet.toggle()
                         } label: {
                             CustomButtonView()
                         }
-
+                        .sheet(isPresented: $isShowingSheet, content: {
+                            SettingsView()
+                        })
                     }
                     
                     Text("Fun and enjoyable outdoor activity for friends and families.")
