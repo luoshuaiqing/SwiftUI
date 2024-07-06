@@ -11,6 +11,9 @@ struct OnboardingView: View {
     
     @AppStorage("onboarding") var isOnboardingViewActive: Bool?
     
+    @State private var buttonWidth: Double = UIScreen.main.bounds.width - 80
+    @State private var buttonOffset: CGFloat = 0
+    
     var body: some View {
         ZStack {
             Color.colorBlue
