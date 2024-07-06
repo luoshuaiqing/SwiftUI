@@ -87,7 +87,7 @@ struct OnboardingView: View {
                         .foregroundColor(.white)
                         .frame(width: 80, height: 80, alignment: .center)
                         .onTapGesture {
-                            isOnboardingViewActive = true
+                            isOnboardingViewActive = false
                         }
                         
                         Spacer()
