@@ -16,10 +16,14 @@ struct HomeView: View {
             
             Spacer()
             
-            Image(.character2)
-                .resizable()
-                .scaledToFit()
+            ZStack {
+                CircleGroupView(shapeColor: .gray, shapeOpacity: 0.1)
+                
+                Image(.character2)
+                    .resizable()
+                    .scaledToFit()
                 .padding()
+            }
             
             Text("The time that leads to mastery is dependent on the intensity of our focus.")
                 .font(.title3)
