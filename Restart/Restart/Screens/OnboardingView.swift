@@ -41,7 +41,7 @@ struct OnboardingView: View {
                 ZStack {
                     CircleGroupView(shapeColor: .white, shapeOpacity: 0.2)
                     
-                    Image("character-1")
+                    Image(.character1)
                         .resizable()
                         .scaledToFit()
                 }
@@ -82,14 +82,20 @@ struct OnboardingView: View {
                         }
                         .foregroundColor(.white)
                         .frame(width: 80, height: 80, alignment: .center)
-                        .onTapGesture {
-                            isOnboardingViewActive = false
-                        }
+                        .offset(x: buttonOffset)
+                        .gesture(
+                            DragGesture()
+                                .onChanged({ gesture in
+                                    if gesture.translation.width > 0 {
+                                        buttonOffset = gesture.translation.width
+                                    }
+                                })
+                        )
                         
                         Spacer()
                     }
                 }
-                .frame(height: 80, alignment: .center)
+                .frame(width: buttonWidth, height: 80, alignment: .center)
                 .padding()
             }
         }
