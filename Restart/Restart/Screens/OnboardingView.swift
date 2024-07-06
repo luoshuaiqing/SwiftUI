@@ -65,7 +65,7 @@ struct OnboardingView: View {
                     HStack {
                         Capsule()
                             .fill(.colorRed)
-                            .frame(width: 80)
+                            .frame(width: buttonOffset + 80)
                         
                         Spacer()
                     }
@@ -91,7 +91,12 @@ struct OnboardingView: View {
                                     }
                                 })
                                 .onEnded({ _ in
-                                    buttonOffset = 0
+                                    if buttonOffset > buttonWidth / 2 {
+                                        buttonOffset = buttonWidth - 80
+                                        isOnboardingViewActive = false
+                                    } else {
+                                        buttonOffset = 0
+                                    }
                                 })
                         )
                         
