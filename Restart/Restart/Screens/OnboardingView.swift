@@ -163,6 +163,7 @@ struct OnboardingView: View {
             }
         }
         .onAppear {
+            print(isAnimating)
             isAnimating = true
         }
         .preferredColorScheme(.dark)
