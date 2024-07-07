@@ -95,7 +95,7 @@ struct ContentView: View {
                         
                         Button {
                             withAnimation(.spring) {
-                                if imageScale < 1 {
+                                if imageScale < 5 {
                                     imageScale += 1
                                     
                                     if imageScale > 5 {
