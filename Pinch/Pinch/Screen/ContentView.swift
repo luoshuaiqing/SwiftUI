@@ -38,7 +38,7 @@ struct ContentView: View {
                     .opacity(isAnimating ? 1 : 0)
                     .offset(x: imageOffset.width, y: imageOffset.height)
                     .scaleEffect(imageScale)
-                    .animation(.easeIn(duration: 0.5))
+                    .animation(.easeIn(duration: 0.5), value: UUID())
                     .onTapGesture(count: 2) {
                         if imageScale == 1{
                             withAnimation(.spring) {
