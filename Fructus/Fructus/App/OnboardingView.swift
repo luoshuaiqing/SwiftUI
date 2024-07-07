@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    let fruits: [Fruit] = fruitsData
+    
     var body: some View {
         TabView {
-            ForEach(0..<5) { item in
-                FruitCardView()
+            ForEach(fruits[0...5]) { fruit in
+                FruitCardView(fruit: fruit)
             }
         }
         .tabViewStyle(PageTabViewStyle())
