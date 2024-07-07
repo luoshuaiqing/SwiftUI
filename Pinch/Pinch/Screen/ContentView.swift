@@ -23,7 +23,6 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-//                Color.clear
                 Color.clear
                 
                 Image("magazine-front-cover")
