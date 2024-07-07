@@ -143,6 +143,7 @@ struct ContentView: View {
                         .frame(height: 40)
                         .padding(8)
                         .foregroundStyle(.secondary)
+                        .id(isDrawerOpen)
                         .onTapGesture {
                             withAnimation(.easeOut) {
                                 isDrawerOpen.toggle()
