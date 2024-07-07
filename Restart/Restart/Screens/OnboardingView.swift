@@ -15,6 +15,8 @@ struct OnboardingView: View {
     @State private var buttonOffset: CGFloat = 0
     @State private var isAnimating: Bool = false
     @State private var imageOffset: CGSize = .zero
+    @State private var indicatorOpacity: Double = 1.0
+    @State private var textTitle: String = "Share."
     
     var body: some View {
         ZStack {
@@ -25,10 +27,11 @@ struct OnboardingView: View {
                 Spacer()
                 
                 VStack(spacing: 0) {
-                    Text("Share.")
+                    Text(textTitle)
                         .font(.system(size: 60))
                         .fontWeight(.heavy)
                         .foregroundColor(.white)
+                        .transition(.opacity)
                     
                     Text("""
                         It's not how much we give but how much love we put into giving.
@@ -61,10 +64,20 @@ struct OnboardingView: View {
                                 .onChanged { gesture in
                                     if abs(imageOffset.width) <= 150 {
                                         imageOffset = gesture.translation
+                                        
+                                        withAnimation(.linear(duration: 0.25)) {
+                                            indicatorOpacity = 0
+                                            textTitle = "Give."
+                                        }
                                     }
                                 }
                                 .onEnded({ _ in
                                     imageOffset = .zero
+                                    
+                                    withAnimation(.linear(duration: 0.25)) {
+                                        indicatorOpacity = 1
+                                        textTitle = "Share."
+                                    }
                                 })
                         )
                         .animation(.easeOut(duration: 1), value: imageOffset)
@@ -75,6 +88,7 @@ struct OnboardingView: View {
                         .foregroundColor(.white)
                         .offset(y: 20)
                         .opacity(isAnimating ? 1 : 0)
+                        .opacity(indicatorOpacity)
                         .animation(.easeOut(duration: 1).delay(2), value: isAnimating),
                     alignment: .bottom
                 )
