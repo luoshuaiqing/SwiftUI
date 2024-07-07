@@ -137,7 +137,7 @@ struct ContentView: View {
             )
             .overlay(
                 HStack(spacing: 12) {
-                    Image(systemName: "chevron.compact.left")
+                    Image(systemName: isDrawerOpen ? "chevron.compact.right" : "chevron.compact.left")
                         .resizable()
                         .scaledToFit()
                         .frame(height: 40)
