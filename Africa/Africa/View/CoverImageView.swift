@@ -14,7 +14,7 @@ struct CoverImageView: View {
     var body: some View {
         TabView {
             ForEach(coverImages) { item in
-                Image("cover-lion")
+                Image(item.name)
                     .resizable()
                 .scaledToFill()
             }
