@@ -16,7 +16,7 @@ struct CoverImageView: View {
             ForEach(coverImages) { item in
                 Image("cover-lion")
                     .resizable()
-                .scaledToFit()
+                .scaledToFill()
             }
         }
         .tabViewStyle(PageTabViewStyle())

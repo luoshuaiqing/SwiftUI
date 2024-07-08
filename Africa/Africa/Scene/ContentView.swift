@@ -13,8 +13,9 @@ struct ContentView: View {
             List {
                 CoverImageView()
                     .frame(height: 300)
-                    .listRowInsets(.none)
+                    .listRowInsets(EdgeInsets())
             }
+            .navigationBarTitle("Africa", displayMode: .large)
         }
     }
 }
