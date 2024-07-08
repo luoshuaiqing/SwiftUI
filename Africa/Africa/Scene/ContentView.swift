@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Content")
+        NavigationView {
+            List {
+                CoverImageView()
+                    .frame(height: 300)
+                    .listRowInsets(.none)
+            }
         }
-        .padding()
     }
 }
 
