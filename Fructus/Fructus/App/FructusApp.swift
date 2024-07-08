@@ -17,7 +17,7 @@ struct FructusApp: App {
             if isOnboarding == nil || isOnboarding! {
                 OnboardingView()
             } else {
-                Text("not onboarding!")
+                ContentView()
             }
         }
     }
