@@ -14,7 +14,7 @@ struct FruitRowView: View {
     var body: some View {
         HStack {
             Image(fruit.image)
-//                .renderingMode(.original)
+                .renderingMode(.original)
                 .resizable()
                 .scaledToFit()
                 .frame(width: 80, height: 80, alignment: .center)
