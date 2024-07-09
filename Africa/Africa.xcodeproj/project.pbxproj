@@ -24,6 +24,7 @@
 		58410D712C3C526D0092695E /* AnimalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D702C3C526D0092695E /* AnimalModel.swift */; };
 		58410D732C3D06270092695E /* AnimalDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D722C3D06270092695E /* AnimalDetailView.swift */; };
 		58410D752C3D07B20092695E /* HeadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D742C3D07B20092695E /* HeadingView.swift */; };
+		58410D772C3D08D40092695E /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D762C3D08D40092695E /* InsetGalleryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		58410D702C3C526D0092695E /* AnimalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalModel.swift; sourceTree = "<group>"; };
 		58410D722C3D06270092695E /* AnimalDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailView.swift; sourceTree = "<group>"; };
 		58410D742C3D07B20092695E /* HeadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingView.swift; sourceTree = "<group>"; };
+		58410D762C3D08D40092695E /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				58410D6E2C3C51690092695E /* AnimalListItemView.swift */,
 				58410D722C3D06270092695E /* AnimalDetailView.swift */,
 				58410D742C3D07B20092695E /* HeadingView.swift */,
+				58410D762C3D08D40092695E /* InsetGalleryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				583FF44A2C3C471A00FDD161 /* MapView.swift in Sources */,
 				583FF4342C3C44FB00FDD161 /* AfricaApp.swift in Sources */,
 				583FF4482C3C470B00FDD161 /* VideoListView.swift in Sources */,
+				58410D772C3D08D40092695E /* InsetGalleryView.swift in Sources */,
 				583FF44C2C3C472D00FDD161 /* GalleryView.swift in Sources */,
 				58410D752C3D07B20092695E /* HeadingView.swift in Sources */,
 			);
