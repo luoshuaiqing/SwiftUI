@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct VideoListView: View {
+    
+    var videos: [Video] = Bundle.main.decode("Data/videos.json")
+    
     var body: some View {
-        Text("Videos")
+        NavigationView {
+            List {
+                ForEach(videos) { video in
+                    VideoListItemView(video: video)
+                }
+            }
+        }
     }
 }
 
