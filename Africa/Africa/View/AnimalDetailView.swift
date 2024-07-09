@@ -37,7 +37,9 @@ struct AnimalDetailView: View {
                     .padding(.horizontal)
                 
                 HeadingView(headingImage: "photo.on.rectangle.angled", headingText: "Wilderness in Pictures")
-                .padding(.horizontal)
+                
+                InsetGalleryView(animal: animal)
+                    .padding(.horizontal)
             })
             .navigationBarTitle("Learn about \(animal.name)", displayMode: .inline)
         }
