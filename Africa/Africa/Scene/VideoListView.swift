@@ -16,8 +16,11 @@ struct VideoListView: View {
             List {
                 ForEach(videos) { video in
                     VideoListItemView(video: video)
+                        .padding(.vertical, 8)
                 }
             }
+            .listStyle(.insetGrouped)
+            .navigationBarTitle("Videos", displayMode: .inline)
         }
     }
 }
