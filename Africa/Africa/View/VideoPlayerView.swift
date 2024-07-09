@@ -33,6 +33,6 @@ struct VideoPlayerView: View {
 
 #Preview {
     NavigationView {
-        VideoPlayerView(videoSelected: "Video/lion", videoTitle: "Lion")
+        VideoPlayerView(videoSelected: "lion", videoTitle: "Lion")
     }
 }

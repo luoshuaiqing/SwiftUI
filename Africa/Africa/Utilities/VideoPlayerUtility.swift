@@ -12,7 +12,7 @@ var videoPlayer: AVPlayer?
 
 func playVideo(fileName: String, fileFormat: String) -> AVPlayer {
     if let url = Bundle.main
-        .url(forResource: fileName, withExtension: fileFormat) {
+        .url(forResource: fileName, withExtension: fileFormat, subdirectory: "Video") {
         videoPlayer = AVPlayer(url: url)
         videoPlayer!.play()
     }
