@@ -30,6 +30,7 @@
 		58410D7D2C3D0FF70092695E /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D7C2C3D0FF70092695E /* ExternalWeblinkView.swift */; };
 		58410D7F2C3D7A9F0092695E /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D7E2C3D7A9F0092695E /* VideoModel.swift */; };
 		58410D812C3D7ADB0092695E /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D802C3D7ADB0092695E /* VideoListItemView.swift */; };
+		58410D832C3D7EB90092695E /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D822C3D7EB90092695E /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		58410D7C2C3D0FF70092695E /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 		58410D7E2C3D7A9F0092695E /* VideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoModel.swift; sourceTree = "<group>"; };
 		58410D802C3D7ADB0092695E /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
+		58410D822C3D7EB90092695E /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 				58410D7A2C3D0E0E0092695E /* InsetMapView.swift */,
 				58410D7C2C3D0FF70092695E /* ExternalWeblinkView.swift */,
 				58410D802C3D7ADB0092695E /* VideoListItemView.swift */,
+				58410D822C3D7EB90092695E /* VideoPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				58410D812C3D7ADB0092695E /* VideoListItemView.swift in Sources */,
 				583FF44C2C3C472D00FDD161 /* GalleryView.swift in Sources */,
 				58410D752C3D07B20092695E /* HeadingView.swift in Sources */,
+				58410D832C3D7EB90092695E /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
