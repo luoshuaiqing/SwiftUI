@@ -14,10 +14,25 @@ struct VideoPlayerView: View {
     let videoTitle: String
     
     var body: some View {
-        VideoPlayer(player: playVideo(fileName: videoSelected, fileFormat: "mp4"))
+        VStack {
+            VideoPlayer(player: playVideo(fileName: videoSelected, fileFormat: "mp4"))
+            .overlay (
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 32, height: 32)
+                    .padding(.top, 6)
+                    .padding(.horizontal, 8)
+                , alignment: .topLeading
+            )
+        }
+        .navigationTitle(videoTitle)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 #Preview {
-    VideoPlayerView(videoSelected: "Video/lion", videoTitle: "Lion")
+    NavigationView {
+        VideoPlayerView(videoSelected: "Video/lion", videoTitle: "Lion")
+    }
 }
