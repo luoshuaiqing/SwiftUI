@@ -27,6 +27,7 @@
 		58410D772C3D08D40092695E /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D762C3D08D40092695E /* InsetGalleryView.swift */; };
 		58410D792C3D0A240092695E /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D782C3D0A240092695E /* InsetFactView.swift */; };
 		58410D7B2C3D0E0E0092695E /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D7A2C3D0E0E0092695E /* InsetMapView.swift */; };
+		58410D7D2C3D0FF70092695E /* ExternalWeblinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D7C2C3D0FF70092695E /* ExternalWeblinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		58410D762C3D08D40092695E /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		58410D782C3D0A240092695E /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		58410D7A2C3D0E0E0092695E /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		58410D7C2C3D0FF70092695E /* ExternalWeblinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWeblinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				58410D762C3D08D40092695E /* InsetGalleryView.swift */,
 				58410D782C3D0A240092695E /* InsetFactView.swift */,
 				58410D7A2C3D0E0E0092695E /* InsetMapView.swift */,
+				58410D7C2C3D0FF70092695E /* ExternalWeblinkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58410D7D2C3D0FF70092695E /* ExternalWeblinkView.swift in Sources */,
 				583FF4362C3C44FB00FDD161 /* ContentView.swift in Sources */,
 				58410D6F2C3C51690092695E /* AnimalListItemView.swift in Sources */,
 				58410D6D2C3C4E160092695E /* Bundle+Extension.swift in Sources */,
