@@ -22,15 +22,22 @@ struct MapView: View {
     
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: locations) { item in
-            // Approach 1
+            // Approach 1:
             // MapMarker(coordinate: item.location, tint: .accent)
             
-            // Approach 2
+            // Approach 2:
+            /*
             MapAnnotation(coordinate: item.location) {
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 32, height: 32, alignment: .center)
+            }
+             */
+            
+            // Approach 3:
+            MapAnnotation(coordinate: item.location) {
+                MapAnnotationView(location: item)
             }
         }
     }
