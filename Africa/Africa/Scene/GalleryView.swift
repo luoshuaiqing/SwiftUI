@@ -47,6 +47,7 @@ struct GalleryView: View {
                             }
                     }
                 }
+                .animation(.easeIn, value: UUID())
             }
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
