@@ -12,7 +12,7 @@ struct GalleryView: View {
     let animals: [Animal] = Bundle.main.decode("Data/animals.json")
     
     @State private var selectedAnimal: String = "lion"
-    @State private var gridLayout: [GridItem] = Array(repeating: GridItem(.flexible()), count: 1)
+    @State private var gridLayout: [GridItem] = []
     @State private var gridColumn = 3.0
     
     func gridSwitch() {
@@ -27,6 +27,12 @@ struct GalleryView: View {
                 .scaledToFit()
                 .clipShape(.circle)
                 .overlay(Circle().stroke(.white, lineWidth: 8))
+            
+            Slider(value: $gridColumn, in: 2...4, step: 1)
+                .padding(.horizontal)
+                .onChange(of: gridColumn) { oldValue, newValue in
+                    gridSwitch()
+                }
             
             VStack(alignment: .center, spacing: 30) {
                 LazyVGrid(columns: gridLayout) {
@@ -44,6 +50,9 @@ struct GalleryView: View {
             }
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
+            .onAppear {
+                gridSwitch()
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(MotionAnimationView())
