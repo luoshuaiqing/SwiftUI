@@ -16,15 +16,21 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                CoverImageView()
-                    .frame(height: 300)
-                    .listRowInsets(EdgeInsets())
-                
-                ForEach(animals) { animal in
-                    NavigationLink(destination: AnimalDetailView(animal: animal)) {
-                        AnimalListItemView(animal: animal)
+            Group {
+                if !isGridViewActive {
+                    List {
+                        CoverImageView()
+                            .frame(height: 300)
+                            .listRowInsets(EdgeInsets())
+                        
+                        ForEach(animals) { animal in
+                            NavigationLink(destination: AnimalDetailView(animal: animal)) {
+                                AnimalListItemView(animal: animal)
+                            }
+                        }
                     }
+                } else {
+                    Text("Grid view is active")
                 }
             }
             .navigationBarTitle("Africa", displayMode: .large)
