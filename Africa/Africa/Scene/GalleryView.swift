@@ -13,7 +13,7 @@ struct GalleryView: View {
     let haptics = UIImpactFeedbackGenerator(style: .medium)
     
     @State private var selectedAnimal: String = "lion"
-    @State private var gridLayout: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
+    @State private var gridLayout: [GridItem] = []
     @State private var gridColumn = 3.0
     
     func gridSwitch() {
