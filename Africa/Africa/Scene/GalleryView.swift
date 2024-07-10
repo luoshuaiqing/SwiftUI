@@ -52,6 +52,7 @@ struct GalleryView: View {
             .padding(.horizontal, 10)
             .padding(.vertical, 50)
             .onAppear {
+                // Note: w/o this code, MotionAnimationView will lose its animation because we are using .animation(x, value: UUID()) instead of .animation(x, value: isAnimating)
                 gridSwitch()
             }
         }

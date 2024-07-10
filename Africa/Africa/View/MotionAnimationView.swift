@@ -50,7 +50,8 @@ struct MotionAnimationView: View {
                             .repeatForever()
                             .speed(randomSpeed())
                             .delay(randomDelay()),
-                            value: isAnimating)
+                            value: UUID()
+                        )
                         .onAppear {
                             isAnimating = true
                         }
