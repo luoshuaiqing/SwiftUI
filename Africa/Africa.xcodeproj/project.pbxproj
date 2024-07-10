@@ -35,6 +35,7 @@
 		58410D882C3D83E10092695E /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D872C3D83E10092695E /* LocationModel.swift */; };
 		58410D8A2C3D862E0092695E /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D892C3D862E0092695E /* MapAnnotationView.swift */; };
 		58410D8C2C3ECB360092695E /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410D8B2C3ECB350092695E /* MotionAnimationView.swift */; };
+		58410DA82C3EEF4E0092695E /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410DA72C3EEF4E0092695E /* AnimalGridItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		58410D872C3D83E10092695E /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		58410D892C3D862E0092695E /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		58410D8B2C3ECB350092695E /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		58410DA72C3EEF4E0092695E /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				58410D822C3D7EB90092695E /* VideoPlayerView.swift */,
 				58410D892C3D862E0092695E /* MapAnnotationView.swift */,
 				58410D8B2C3ECB350092695E /* MotionAnimationView.swift */,
+				58410DA72C3EEF4E0092695E /* AnimalGridItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				58410D7F2C3D7A9F0092695E /* VideoModel.swift in Sources */,
 				583FF4482C3C470B00FDD161 /* VideoListView.swift in Sources */,
 				58410D882C3D83E10092695E /* LocationModel.swift in Sources */,
+				58410DA82C3EEF4E0092695E /* AnimalGridItemView.swift in Sources */,
 				58410D772C3D08D40092695E /* InsetGalleryView.swift in Sources */,
 				58410D812C3D7ADB0092695E /* VideoListItemView.swift in Sources */,
 				583FF44C2C3C472D00FDD161 /* GalleryView.swift in Sources */,
