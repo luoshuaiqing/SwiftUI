@@ -56,6 +56,7 @@ struct MotionAnimationView: View {
                         }
                 }
             }
+            .drawingGroup()
         }
     }
 }
