@@ -13,19 +13,19 @@ struct FooterView: View {
             Text("We offer the most cutting edge, comfortable, lightweight and durable football helmets in the market at affordable prices.")
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
-                .layoutPriority(2)
+//                .layoutPriority(2)
             
             Image("logo-lineal")
                 .renderingMode(.template)
                 .foregroundColor(.gray)
-                .layoutPriority(0)
+//                .layoutPriority(0)
             
             Text("Copyright © Shuaiqing Luo\nAll right reserved")
                 .font(.footnote)
                 .fontWeight(.bold)
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
-                .layoutPriority(1)
+//                .layoutPriority(1)
         }
         .padding()
     }
