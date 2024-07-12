@@ -12,6 +12,9 @@
 		5809AC8A2C40401F00FC0497 /* FeaturedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809AC892C40401F00FC0497 /* FeaturedItemView.swift */; };
 		5809AC8C2C40406A00FC0497 /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809AC8B2C40406A00FC0497 /* FeaturedTabView.swift */; };
 		5809AC8E2C4185B100FC0497 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809AC8D2C4185B100FC0497 /* CategoryModel.swift */; };
+		5809AC902C41867B00FC0497 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809AC8F2C41867B00FC0497 /* CategoryItemView.swift */; };
+		5809AC922C418B9E00FC0497 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809AC912C418B9E00FC0497 /* CategoryGridView.swift */; };
+		5809AC942C418CE900FC0497 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809AC932C418CE900FC0497 /* SectionView.swift */; };
 		58410DC62C402D1C0092695E /* TouchdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410DC52C402D1C0092695E /* TouchdownApp.swift */; };
 		58410DC82C402D1C0092695E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58410DC72C402D1C0092695E /* ContentView.swift */; };
 		58410DCA2C402D1E0092695E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58410DC92C402D1E0092695E /* Assets.xcassets */; };
@@ -29,6 +32,9 @@
 		5809AC892C40401F00FC0497 /* FeaturedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItemView.swift; sourceTree = "<group>"; };
 		5809AC8B2C40406A00FC0497 /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
 		5809AC8D2C4185B100FC0497 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		5809AC8F2C41867B00FC0497 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
+		5809AC912C418B9E00FC0497 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		5809AC932C418CE900FC0497 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		58410DC22C402D1C0092695E /* Touchdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touchdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58410DC52C402D1C0092695E /* TouchdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchdownApp.swift; sourceTree = "<group>"; };
 		58410DC72C402D1C0092695E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +132,9 @@
 				58410DE32C4038450092695E /* LogoView.swift */,
 				5809AC892C40401F00FC0497 /* FeaturedItemView.swift */,
 				5809AC8B2C40406A00FC0497 /* FeaturedTabView.swift */,
+				5809AC8F2C41867B00FC0497 /* CategoryItemView.swift */,
+				5809AC912C418B9E00FC0497 /* CategoryGridView.swift */,
+				5809AC932C418CE900FC0497 /* SectionView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -233,8 +242,11 @@
 				5809AC8A2C40401F00FC0497 /* FeaturedItemView.swift in Sources */,
 				58410DC62C402D1C0092695E /* TouchdownApp.swift in Sources */,
 				58410DDE2C402E4E0092695E /* Constant.swift in Sources */,
+				5809AC922C418B9E00FC0497 /* CategoryGridView.swift in Sources */,
 				5809AC8E2C4185B100FC0497 /* CategoryModel.swift in Sources */,
 				58410DE22C4037650092695E /* NavigationBarView.swift in Sources */,
+				5809AC942C418CE900FC0497 /* SectionView.swift in Sources */,
+				5809AC902C41867B00FC0497 /* CategoryItemView.swift in Sources */,
 				5809AC8C2C40406A00FC0497 /* FeaturedTabView.swift in Sources */,
 				5809AC862C403F3600FC0497 /* PlayerModel.swift in Sources */,
 			);
