@@ -19,6 +19,7 @@ struct ContentView: View {
             ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     FeaturedTabView()
+                        .frame(minHeight: 256)
                         .padding(.vertical, 20)
                     
                     FooterView()
