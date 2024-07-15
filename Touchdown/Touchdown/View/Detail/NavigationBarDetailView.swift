@@ -41,4 +41,5 @@ struct NavigationBarDetailView: View {
 #Preview {
     NavigationBarDetailView()
         .background(.gray)
+        .environment(Shop())
 }
