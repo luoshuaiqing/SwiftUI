@@ -33,7 +33,11 @@ struct ProductDetailView: View {
                         .multilineTextAlignment(.leading)
                 }
                 
-                Spacer()
+                QuantityFavoriteDetailView()
+                    .padding(.vertical, 10)
+                
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
             }
             .padding(.horizontal)
             .background(
