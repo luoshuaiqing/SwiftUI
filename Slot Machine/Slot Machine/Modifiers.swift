@@ -50,3 +50,13 @@ struct ImageModifier: ViewModifier {
             .modifier(ShadowModifier())
     }
 }
+
+struct BetNumberModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.system(.title, design: .rounded))
+            .padding(.vertical, 5)
+            .frame(width: 90)
+            .shadow(color: .colorTransparentBlack, radius: 0, x: 0, y: 3)
+    }
+}

@@ -79,6 +79,39 @@ struct ContentView: View {
                 .frame(maxWidth: 500)
                 
                 Spacer()
+                
+                HStack {
+                    HStack(spacing: 10) {
+                        Button(action: {}, label: {
+                            Text("20")
+                                .fontWeight(.heavy)
+                                .foregroundStyle(.white)
+                                .modifier(BetNumberModifier())
+                        })
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .top, endPoint: .bottom)
+                                )
+                        )
+                        .padding(3)
+                        .background(
+                            Capsule()
+                                .fill(
+                                    LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .bottom, endPoint: .top)
+                                )
+                                .modifier(ShadowModifier())
+                        )
+                        
+                        Image("gfx-casino-chips")
+                            .resizable()
+                            .opacity(1)
+                            .scaledToFit()
+                            .frame(height: 64)
+                            .animation(.default, value: UUID())
+                            .modifier(ShadowModifier())
+                    }
+                }
             }
             .overlay(
                 Button(action: {}, label: {
