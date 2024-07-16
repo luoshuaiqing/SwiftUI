@@ -92,8 +92,23 @@ struct ContentView: View {
                         
                         Image("gfx-casino-chips")
                             .resizable()
+                            .opacity(0)
+                            .modifier(CasinoChipsModifier())
+                    }
+                    
+                    HStack(spacing: 10) {
+                        Image("gfx-casino-chips")
+                            .resizable()
                             .opacity(1)
                             .modifier(CasinoChipsModifier())
+                        
+                        Button(action: {}, label: {
+                            Text("10")
+                                .fontWeight(.heavy)
+                                .foregroundStyle(.yellow)
+                                .modifier(BetNumberModifier())
+                        })
+                        .modifier(BetCapsuleModifier())
                     }
                 }
             }
