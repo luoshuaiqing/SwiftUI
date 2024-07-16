@@ -13,6 +13,7 @@
 		5809ACC72C46AF7B00FC0497 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5809ACC62C46AF7B00FC0497 /* Preview Assets.xcassets */; };
 		5809ACCE2C46B13100FC0497 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809ACCD2C46B13100FC0497 /* LogoView.swift */; };
 		5809ACD02C46B14300FC0497 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809ACCF2C46B14300FC0497 /* Modifiers.swift */; };
+		5809ACD22C46B3D000FC0497 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5809ACD12C46B3D000FC0497 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		5809ACC62C46AF7B00FC0497 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5809ACCD2C46B13100FC0497 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		5809ACCF2C46B14300FC0497 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		5809ACD12C46B3D000FC0497 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5809ACC52C46AF7B00FC0497 /* Preview Content */,
 				5809ACCD2C46B13100FC0497 /* LogoView.swift */,
 				5809ACCF2C46B14300FC0497 /* Modifiers.swift */,
+				5809ACD12C46B3D000FC0497 /* Extensions.swift */,
 			);
 			path = "Slot Machine";
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5809ACD22C46B3D000FC0497 /* Extensions.swift in Sources */,
 				5809ACD02C46B14300FC0497 /* Modifiers.swift in Sources */,
 				5809ACC22C46AF7900FC0497 /* ContentView.swift in Sources */,
 				5809ACCE2C46B13100FC0497 /* LogoView.swift in Sources */,

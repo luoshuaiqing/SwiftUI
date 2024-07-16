@@ -16,6 +16,19 @@ struct ContentView: View {
                 LogoView()
                 
                 Spacer()
+                
+                HStack {
+                    Text("Your\nCoins".uppercased())
+                        .scoreLabelStyle()
+                        .multilineTextAlignment(.trailing)
+                    
+                    Text("100")
+                        .scoreNumberStyle()
+                        .modifier(ScoreNumberModifier())
+                }
+                .modifier(ScoreContainerModifier())
+                
+                Spacer()
             }
             .overlay(
                 Button(action: {}, label: {
