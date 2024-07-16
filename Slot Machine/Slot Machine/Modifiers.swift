@@ -60,3 +60,33 @@ struct BetNumberModifier: ViewModifier {
             .shadow(color: .colorTransparentBlack, radius: 0, x: 0, y: 3)
     }
 }
+
+struct BetCapsuleModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .background(
+                Capsule()
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .top, endPoint: .bottom)
+                    )
+            )
+            .padding(3)
+            .background(
+                Capsule()
+                    .fill(
+                        LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .bottom, endPoint: .top)
+                    )
+                    .modifier(ShadowModifier())
+            )
+    }
+}
+
+struct CasinoChipsModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .scaledToFit()
+            .frame(height: 64)
+            .animation(.default, value: UUID())
+            .modifier(ShadowModifier())
+    }
+}

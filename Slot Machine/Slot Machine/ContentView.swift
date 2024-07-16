@@ -88,28 +88,12 @@ struct ContentView: View {
                                 .foregroundStyle(.white)
                                 .modifier(BetNumberModifier())
                         })
-                        .background(
-                            Capsule()
-                                .fill(
-                                    LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .top, endPoint: .bottom)
-                                )
-                        )
-                        .padding(3)
-                        .background(
-                            Capsule()
-                                .fill(
-                                    LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .bottom, endPoint: .top)
-                                )
-                                .modifier(ShadowModifier())
-                        )
+                        .modifier(BetCapsuleModifier())
                         
                         Image("gfx-casino-chips")
                             .resizable()
                             .opacity(1)
-                            .scaledToFit()
-                            .frame(height: 64)
-                            .animation(.default, value: UUID())
-                            .modifier(ShadowModifier())
+                            .modifier(CasinoChipsModifier())
                     }
                 }
             }
