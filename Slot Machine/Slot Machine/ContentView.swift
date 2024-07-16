@@ -18,15 +18,30 @@ struct ContentView: View {
                 Spacer()
                 
                 HStack {
-                    Text("Your\nCoins".uppercased())
-                        .scoreLabelStyle()
-                        .multilineTextAlignment(.trailing)
+                    HStack {
+                        Text("Your\nCoins".uppercased())
+                            .scoreLabelStyle()
+                            .multilineTextAlignment(.trailing)
+                        
+                        Text("100")
+                            .scoreNumberStyle()
+                            .modifier(ScoreNumberModifier())
+                    }
+                    .modifier(ScoreContainerModifier())
                     
-                    Text("100")
-                        .scoreNumberStyle()
-                        .modifier(ScoreNumberModifier())
+                    Spacer()
+                    
+                    HStack {
+                        Text("200")
+                            .scoreNumberStyle()
+                            .modifier(ScoreNumberModifier())
+                        
+                        Text("Your\nCoins".uppercased())
+                            .scoreLabelStyle()
+                            .multilineTextAlignment(.leading)
+                    }
+                    .modifier(ScoreContainerModifier())
                 }
-                .modifier(ScoreContainerModifier())
                 
                 Spacer()
             }
