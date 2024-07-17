@@ -18,7 +18,7 @@ struct ContentView: View {
     @State private var showingInfoView = false
     @State private var isActiveBet10 = true
     @State private var isActiveBet20 = false
-    @State private var showingModal = true
+    @State private var showingModal = false
     
     func spinReels() {
         reels = reels.map { _ in
