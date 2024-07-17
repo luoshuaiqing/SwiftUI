@@ -11,7 +11,7 @@ struct ContentView: View {
     
     let symbols = ["gfx-bell", "gfx-cherry", "gfx-coin", "gfx-grape", "gfx-seven", "gfx-strawberry"]
     
-    @State private var highScore = 0
+    @State private var highScore = UserDefaults.standard.integer(forKey: "HighScore")
     @State private var coins = 100
     @State private var betAmount = 10
     @State private var reels = [0, 1, 2]
@@ -44,6 +44,7 @@ struct ContentView: View {
     
     func newHighScore() {
         highScore = coins
+        UserDefaults.standard.setValue(highScore, forKey: "HighScore")
     }
         
     func playerLoses() {
