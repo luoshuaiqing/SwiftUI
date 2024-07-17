@@ -14,6 +14,12 @@ struct ContentView: View {
     @State private var reels = [0, 1, 2]
     @State private var showingInfoView = false
     
+    func spinReels() {
+        reels = reels.map { _ in
+            Int.random(in: 0...symbols.count - 1)
+        }
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
@@ -75,7 +81,9 @@ struct ContentView: View {
                         }
                     }
                     
-                    Button(action: {}, label: {
+                    Button(action: {
+                        spinReels()
+                    }, label: {
                         Image("gfx-spin")
                             .renderingMode(.original)
                             .resizable()
