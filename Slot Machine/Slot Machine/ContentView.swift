@@ -9,6 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
+    let symbols = ["gfx-bell", "gfx-cherry", "gfx-coin", "gfx-grape", "gfx-seven", "gfx-strawberry"]
+    
+    @State private var reels = [0, 1, 2]
     @State private var showingInfoView = false
     
     var body: some View {
@@ -49,7 +52,7 @@ struct ContentView: View {
                 VStack {
                     ZStack {
                         ReelView()
-                        Image("gfx-bell")
+                        Image(symbols[reels[0]])
                             .resizable()
                             .modifier(ImageModifier())
                     }
@@ -57,7 +60,7 @@ struct ContentView: View {
                     HStack {
                         ZStack {
                             ReelView()
-                            Image("gfx-seven")
+                            Image(symbols[reels[1]])
                                 .resizable()
                                 .modifier(ImageModifier())
                         }
@@ -66,7 +69,7 @@ struct ContentView: View {
                         
                         ZStack {
                             ReelView()
-                            Image("gfx-cherry")
+                            Image(symbols[reels[2]])
                                 .resizable()
                                 .modifier(ImageModifier())
                         }
