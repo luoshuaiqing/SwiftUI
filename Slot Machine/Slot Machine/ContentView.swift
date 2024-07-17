@@ -11,6 +11,9 @@ struct ContentView: View {
     
     let symbols = ["gfx-bell", "gfx-cherry", "gfx-coin", "gfx-grape", "gfx-seven", "gfx-strawberry"]
     
+    @State private var highScore = 0
+    @State private var coins = 100
+    @State private var betAmount = 10
     @State private var reels = [0, 1, 2]
     @State private var showingInfoView = false
     
@@ -18,6 +21,38 @@ struct ContentView: View {
         reels = reels.map { _ in
             Int.random(in: 0...symbols.count - 1)
         }
+    }
+    
+    func checkWinning() {
+        if reels[0] == reels[1] && reels[0] == reels[2]  {
+            playerWins()
+            
+            if coins > highScore {
+                newHighScore()
+            }
+        } else {
+            playerLoses()
+        }
+    }
+    
+    func playerWins() {
+        coins += betAmount * 10
+    }
+    
+    func newHighScore() {
+        highScore = coins
+    }
+        
+    func playerLoses() {
+        coins -= betAmount
+    }
+    
+    func activateBet20() {
+        betAmount = 20
+    }
+    
+    func activateBet10() {
+        betAmount = 10
     }
     
     var body: some View {
@@ -35,7 +70,7 @@ struct ContentView: View {
                             .scoreLabelStyle()
                             .multilineTextAlignment(.trailing)
                         
-                        Text("100")
+                        Text("\(coins)")
                             .scoreNumberStyle()
                             .modifier(ScoreNumberModifier())
                     }
@@ -44,11 +79,11 @@ struct ContentView: View {
                     Spacer()
                     
                     HStack {
-                        Text("200")
+                        Text("\(highScore)")
                             .scoreNumberStyle()
                             .modifier(ScoreNumberModifier())
                         
-                        Text("Your\nCoins".uppercased())
+                        Text("High\nScore".uppercased())
                             .scoreLabelStyle()
                             .multilineTextAlignment(.leading)
                     }
@@ -83,6 +118,7 @@ struct ContentView: View {
                     
                     Button(action: {
                         spinReels()
+                        checkWinning()
                     }, label: {
                         Image("gfx-spin")
                             .renderingMode(.original)
@@ -96,7 +132,9 @@ struct ContentView: View {
                 
                 HStack {
                     HStack(spacing: 10) {
-                        Button(action: {}, label: {
+                        Button(action: {
+                            activateBet20()
+                        }, label: {
                             Text("20")
                                 .fontWeight(.heavy)
                                 .foregroundStyle(.white)
@@ -116,7 +154,9 @@ struct ContentView: View {
                             .opacity(1)
                             .modifier(CasinoChipsModifier())
                         
-                        Button(action: {}, label: {
+                        Button(action: {
+                            activateBet10()
+                        }, label: {
                             Text("10")
                                 .fontWeight(.heavy)
                                 .foregroundStyle(.yellow)
