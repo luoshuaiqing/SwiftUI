@@ -18,6 +18,7 @@ struct ContentView: View {
     @State private var showingInfoView = false
     @State private var isActiveBet10 = true
     @State private var isActiveBet20 = false
+    @State private var showingModal = true
     
     func spinReels() {
         reels = reels.map { _ in
@@ -59,6 +60,12 @@ struct ContentView: View {
         betAmount = 10
         isActiveBet10 = true
         isActiveBet20 = false
+    }
+    
+    func checkGameOver() {
+        if coins <= 0 {
+            showingModal = true
+        }
     }
     
     var body: some View {
@@ -125,6 +132,7 @@ struct ContentView: View {
                     Button(action: {
                         spinReels()
                         checkWinning()
+                        checkGameOver()
                     }, label: {
                         Image("gfx-spin")
                             .renderingMode(.original)
@@ -190,6 +198,62 @@ struct ContentView: View {
             )
             .padding()
             .frame(maxWidth: 720)
+            .blur(radius: showingModal ? 5 : 0, opaque: false)
+            
+            if showingModal {
+                ZStack {
+                    Color.colorTransparentBlack.edgesIgnoringSafeArea(.all)
+                    
+                    VStack {
+                        Text("GAME OVER")
+                            .font(.system(.title, design: .rounded))
+                            .fontWeight(.heavy)
+                            .padding()
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            .background(.colorPink)
+                            .foregroundColor(.white)
+                        
+                        Spacer()
+                        
+                        VStack(alignment: .center, spacing: 16, content: {
+                            Image("gfx-seven-reel")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(maxHeight: 72)
+                            
+                            Text("Bad luck! You lost all of the coins. \nLet's play again!")
+                                .font(.system(.body, design: .rounded))
+                                .lineLimit(2)
+                                .multilineTextAlignment(.center)
+                                .foregroundColor(.gray)
+                            
+                            Button(action: {
+                                showingModal = false
+                                coins = 100
+                            }, label: {
+                                Text("New Game".uppercased())
+                                    .font(.system(.body, design: .rounded))
+                                    .fontWeight(.semibold)
+                                    .accentColor(.colorPink)
+                                    .padding(.horizontal, 12)
+                                    .padding(.vertical, 8)
+                                    .frame(minWidth: 128)
+                                    .background(
+                                        Capsule()
+                                            .strokeBorder(lineWidth: 1.75)
+                                            .foregroundColor(.colorPink)
+                                    )
+                            })
+                        })
+                        
+                        Spacer()
+                    }
+                    .frame(minWidth: 280, idealWidth: 280, maxWidth: 320, minHeight: 260, idealHeight: 280, maxHeight: 320, alignment: .center)
+                    .background(.white)
+                    .cornerRadius(20)
+                    .shadow(color: .colorTransparentBlack, radius: 6, x: 0, y: 8)
+                }
+            }
         }
         .sheet(isPresented: $showingInfoView, content: {
             InfoView()
