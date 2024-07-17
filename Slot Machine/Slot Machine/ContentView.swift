@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var betAmount = 10
     @State private var reels = [0, 1, 2]
     @State private var showingInfoView = false
+    @State private var isActiveBet10 = true
+    @State private var isActiveBet20 = false
     
     func spinReels() {
         reels = reels.map { _ in
@@ -49,10 +51,14 @@ struct ContentView: View {
     
     func activateBet20() {
         betAmount = 20
+        isActiveBet20 = true
+        isActiveBet10 = false
     }
     
     func activateBet10() {
         betAmount = 10
+        isActiveBet10 = true
+        isActiveBet20 = false
     }
     
     var body: some View {
@@ -137,21 +143,21 @@ struct ContentView: View {
                         }, label: {
                             Text("20")
                                 .fontWeight(.heavy)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(isActiveBet20 ? .colorYellow : .white)
                                 .modifier(BetNumberModifier())
                         })
                         .modifier(BetCapsuleModifier())
                         
                         Image("gfx-casino-chips")
                             .resizable()
-                            .opacity(0)
+                            .opacity(isActiveBet20 ? 1 : 0)
                             .modifier(CasinoChipsModifier())
                     }
                     
                     HStack(spacing: 10) {
                         Image("gfx-casino-chips")
                             .resizable()
-                            .opacity(1)
+                            .opacity(isActiveBet10 ? 1 : 0)
                             .modifier(CasinoChipsModifier())
                         
                         Button(action: {
@@ -159,7 +165,7 @@ struct ContentView: View {
                         }, label: {
                             Text("10")
                                 .fontWeight(.heavy)
-                                .foregroundStyle(.yellow)
+                                .foregroundStyle(isActiveBet10 ? .colorYellow : .white)
                                 .modifier(BetNumberModifier())
                         })
                         .modifier(BetCapsuleModifier())
