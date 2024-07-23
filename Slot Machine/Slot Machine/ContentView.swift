@@ -19,6 +19,7 @@ struct ContentView: View {
     @State private var isActiveBet10 = true
     @State private var isActiveBet20 = false
     @State private var showingModal = false
+    @State private var animatingSymbol = false
     
     func spinReels() {
         reels = reels.map { _ in
@@ -117,6 +118,12 @@ struct ContentView: View {
                         Image(symbols[reels[0]])
                             .resizable()
                             .modifier(ImageModifier())
+                            .opacity(animatingSymbol ? 1 : 0)
+                            .offset(y: animatingSymbol ? 0 : -50)
+                            .animation(.easeOut, value: UUID())
+                            .onAppear {
+                                animatingSymbol = true
+                            }
                     }
                     
                     HStack {
@@ -125,6 +132,12 @@ struct ContentView: View {
                             Image(symbols[reels[1]])
                                 .resizable()
                                 .modifier(ImageModifier())
+                                .opacity(animatingSymbol ? 1 : 0)
+                                .offset(y: animatingSymbol ? 0 : -50)
+                                .animation(.easeOut, value: UUID())
+                                .onAppear {
+                                    animatingSymbol = true
+                                }
                         }
                         
                         Spacer()
@@ -134,6 +147,12 @@ struct ContentView: View {
                             Image(symbols[reels[2]])
                                 .resizable()
                                 .modifier(ImageModifier())
+                                .opacity(animatingSymbol ? 1 : 0)
+                                .offset(y: animatingSymbol ? 0 : -50)
+                                .animation(.easeOut, value: UUID())
+                                .onAppear {
+                                    animatingSymbol = true
+                                }
                         }
                     }
                     
