@@ -69,6 +69,13 @@ struct ContentView: View {
         }
     }
     
+    func resetGame() {
+        UserDefaults.standard.setValue(0, forKey: "HighScore")
+        highScore = 0
+        coins = 100
+        activateBet10()
+    }
+    
     var body: some View {
         ZStack {
             LinearGradient(gradient: Gradient(colors: [.colorPink, .colorPurple]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
@@ -182,7 +189,9 @@ struct ContentView: View {
                 }
             }
             .overlay(
-                Button(action: {}, label: {
+                Button(action: {
+                    resetGame()
+                }, label: {
                     Image(systemName: "arrow.2.circlepath.circle")
                 })
                 .modifier(ButtonModifier()),
