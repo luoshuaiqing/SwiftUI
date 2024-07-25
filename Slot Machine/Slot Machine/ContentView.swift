@@ -20,6 +20,7 @@ struct ContentView: View {
     @State private var isActiveBet20 = false
     @State private var showingModal = false
     @State private var animatingSymbol = false
+    @State private var animatingModel = false
     
     func spinReels() {
         reels = reels.map { _ in
@@ -199,6 +200,8 @@ struct ContentView: View {
                             .modifier(CasinoChipsModifier())
                     }
                     
+                    Spacer()
+                    
                     HStack(spacing: 10) {
                         Image("gfx-casino-chips")
                             .resizable()
@@ -270,6 +273,8 @@ struct ContentView: View {
                             
                             Button(action: {
                                 showingModal = false
+                                animatingModel = false
+                                activateBet10()
                                 coins = 100
                             }, label: {
                                 Text("New Game".uppercased())
@@ -293,6 +298,12 @@ struct ContentView: View {
                     .background(.white)
                     .cornerRadius(20)
                     .shadow(color: .colorTransparentBlack, radius: 6, x: 0, y: 8)
+                    .opacity(animatingModel ? 1 : 0)
+                    .offset(y: animatingModel ? 0 : -100)
+                    .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/0/*@END_MENU_TOKEN@*/)
+                    .onAppear {
+                        animatingModel = true
+                    }
                 }
             }
         }
