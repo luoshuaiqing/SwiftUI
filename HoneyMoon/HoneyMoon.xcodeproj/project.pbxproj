@@ -13,6 +13,8 @@
 		5809ACEC2C52D72900FC0497 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5809ACEB2C52D72900FC0497 /* Preview Assets.xcassets */; };
 		5817730C2C52DEB900C8E4D1 /* HoneyMoonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817730B2C52DEB900C8E4D1 /* HoneyMoonModel.swift */; };
 		5817730F2C52DEFD00C8E4D1 /* HoneyMoonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817730E2C52DEFD00C8E4D1 /* HoneyMoonData.swift */; };
+		581773142C52DF5400C8E4D1 /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773132C52DF5400C8E4D1 /* Credits.swift */; };
+		581773192C52DFDA00C8E4D1 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773182C52DFDA00C8E4D1 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		5809ACEB2C52D72900FC0497 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5817730B2C52DEB900C8E4D1 /* HoneyMoonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyMoonModel.swift; sourceTree = "<group>"; };
 		5817730E2C52DEFD00C8E4D1 /* HoneyMoonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyMoonData.swift; sourceTree = "<group>"; };
+		581773132C52DF5400C8E4D1 /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
+		581773182C52DFDA00C8E4D1 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,10 @@
 		5809ACE32C52D72800FC0497 /* HoneyMoon */ = {
 			isa = PBXGroup;
 			children = (
+				581773152C52DF6000C8E4D1 /* View */,
 				581773102C52DF0600C8E4D1 /* Data */,
 				5817730D2C52DEBD00C8E4D1 /* Model */,
 				5809ACE42C52D72800FC0497 /* HoneyMoonApp.swift */,
-				5809ACE62C52D72800FC0497 /* ContentView.swift */,
 				5809ACE82C52D72900FC0497 /* Assets.xcassets */,
 				5809ACEA2C52D72900FC0497 /* Preview Content */,
 			);
@@ -85,8 +89,18 @@
 			isa = PBXGroup;
 			children = (
 				5817730E2C52DEFD00C8E4D1 /* HoneyMoonData.swift */,
+				581773132C52DF5400C8E4D1 /* Credits.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		581773152C52DF6000C8E4D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5809ACE62C52D72800FC0497 /* ContentView.swift */,
+				581773182C52DFDA00C8E4D1 /* CardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +176,8 @@
 				5817730F2C52DEFD00C8E4D1 /* HoneyMoonData.swift in Sources */,
 				5809ACE72C52D72800FC0497 /* ContentView.swift in Sources */,
 				5817730C2C52DEB900C8E4D1 /* HoneyMoonModel.swift in Sources */,
+				581773142C52DF5400C8E4D1 /* Credits.swift in Sources */,
+				581773192C52DFDA00C8E4D1 /* CardView.swift in Sources */,
 				5809ACE52C52D72800FC0497 /* HoneyMoonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
