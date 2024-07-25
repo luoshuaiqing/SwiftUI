@@ -193,14 +193,18 @@ struct ContentView: View {
                         
                         Image("gfx-casino-chips")
                             .resizable()
+                            .offset(x: isActiveBet20 ? 0 : 20)
                             .opacity(isActiveBet20 ? 1 : 0)
+                            .animation(.easeInOut(duration: 0.3), value: UUID())
                             .modifier(CasinoChipsModifier())
                     }
                     
                     HStack(spacing: 10) {
                         Image("gfx-casino-chips")
                             .resizable()
+                            .offset(x: isActiveBet10 ? 0 : -20)
                             .opacity(isActiveBet10 ? 1 : 0)
+                            .animation(.easeInOut(duration: 0.3), value: UUID())
                             .modifier(CasinoChipsModifier())
                         
                         Button(action: {
