@@ -43,7 +43,7 @@ struct CardView: View {
                             Capsule().fill(.white)
                         )
                 })
-                .frame(minWidth: 280)
+//                .frame(minWidth: 280)
                 .padding(.bottom, 50)
             }
     }
