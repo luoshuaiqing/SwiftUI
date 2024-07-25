@@ -157,7 +157,15 @@ struct ContentView: View {
                     }
                     
                     Button(action: {
+                        
+                        animatingSymbol = false
+                        
                         spinReels()
+                        
+                        withAnimation {
+                            animatingSymbol = true
+                        }
+                        
                         checkWinning()
                         checkGameOver()
                     }, label: {
