@@ -300,7 +300,7 @@ struct ContentView: View {
                     .shadow(color: .colorTransparentBlack, radius: 6, x: 0, y: 8)
                     .opacity(animatingModel ? 1 : 0)
                     .offset(y: animatingModel ? 0 : -100)
-                    .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/, value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/0/*@END_MENU_TOKEN@*/)
+                    .animation(.spring(response: 0.6, dampingFraction: 1, blendDuration: 1), value: UUID())
                     .onAppear {
                         animatingModel = true
                     }
