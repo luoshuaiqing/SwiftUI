@@ -120,7 +120,7 @@ struct ContentView: View {
                             .modifier(ImageModifier())
                             .opacity(animatingSymbol ? 1 : 0)
                             .offset(y: animatingSymbol ? 0 : -50)
-                            .animation(.easeOut, value: UUID())
+                            .animation(.easeOut(duration: Double.random(in: 0.5...0.7)), value: UUID())
                             .onAppear {
                                 animatingSymbol = true
                             }
@@ -134,7 +134,7 @@ struct ContentView: View {
                                 .modifier(ImageModifier())
                                 .opacity(animatingSymbol ? 1 : 0)
                                 .offset(y: animatingSymbol ? 0 : -50)
-                                .animation(.easeOut, value: UUID())
+                                .animation(.easeOut(duration: Double.random(in: 0.5...0.7)), value: UUID())
                                 .onAppear {
                                     animatingSymbol = true
                                 }
@@ -149,7 +149,7 @@ struct ContentView: View {
                                 .modifier(ImageModifier())
                                 .opacity(animatingSymbol ? 1 : 0)
                                 .offset(y: animatingSymbol ? 0 : -50)
-                                .animation(.easeOut, value: UUID())
+                                .animation(.easeOut(duration: Double.random(in: 0.5...0.7)), value: UUID())
                                 .onAppear {
                                     animatingSymbol = true
                                 }
