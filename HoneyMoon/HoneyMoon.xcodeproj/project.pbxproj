@@ -19,6 +19,7 @@
 		5817731F2C52E52800C8E4D1 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817731E2C52E52800C8E4D1 /* FooterView.swift */; };
 		581773222C52E9B600C8E4D1 /* HeaderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773212C52E9B600C8E4D1 /* HeaderComponent.swift */; };
 		581773242C52EA3000C8E4D1 /* GuideComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773232C52EA3000C8E4D1 /* GuideComponent.swift */; };
+		581773262C52EBEC00C8E4D1 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773252C52EBEC00C8E4D1 /* GuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5817731E2C52E52800C8E4D1 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		581773212C52E9B600C8E4D1 /* HeaderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderComponent.swift; sourceTree = "<group>"; };
 		581773232C52EA3000C8E4D1 /* GuideComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideComponent.swift; sourceTree = "<group>"; };
+		581773252C52EBEC00C8E4D1 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				5817731C2C52E3E400C8E4D1 /* HeaderView.swift */,
 				581773182C52DFDA00C8E4D1 /* CardView.swift */,
 				5817731E2C52E52800C8E4D1 /* FooterView.swift */,
+				581773252C52EBEC00C8E4D1 /* GuideView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				581773192C52DFDA00C8E4D1 /* CardView.swift in Sources */,
 				5817731F2C52E52800C8E4D1 /* FooterView.swift in Sources */,
 				581773222C52E9B600C8E4D1 /* HeaderComponent.swift in Sources */,
+				581773262C52EBEC00C8E4D1 /* GuideView.swift in Sources */,
 				5809ACE52C52D72800FC0497 /* HoneyMoonApp.swift in Sources */,
 				5817731D2C52E3E400C8E4D1 /* HeaderView.swift in Sources */,
 			);
