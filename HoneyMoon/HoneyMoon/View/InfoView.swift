@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
         ScrollView(showsIndicators: false, content: {
             VStack(spacing: 20, content: {
@@ -30,7 +33,7 @@ struct InfoView: View {
                 Spacer(minLength: 10)
                 
                 Button(action: {
-                    
+                    dismiss()
                 }, label: {
                     Text("Continue".uppercased())
                         .modifier(ButtonModifier())

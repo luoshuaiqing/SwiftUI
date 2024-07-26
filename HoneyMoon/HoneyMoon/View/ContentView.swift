@@ -11,10 +11,11 @@ struct ContentView: View {
     
     @State var showBookingAlert = false
     @State var showGuideView = false
+    @State var showInfoView = false
     
     var body: some View {
         VStack {
-            HeaderView(showGuideView: $showGuideView)
+            HeaderView(showGuideView: $showGuideView, showInfoView: $showInfoView)
             
             Spacer()
             
