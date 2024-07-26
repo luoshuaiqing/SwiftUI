@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showBookingAlert = false
+    
     var body: some View {
         VStack {
             HeaderView()
@@ -19,7 +22,7 @@ struct ContentView: View {
             
             Spacer()
             
-            FooterView()
+            FooterView(showBookingAlert: $showBookingAlert)
         }
     }
 }

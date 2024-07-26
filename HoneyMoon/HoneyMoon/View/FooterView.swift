@@ -19,7 +19,7 @@ struct FooterView: View {
             Spacer()
             
             Button(action: {
-                
+                showBookingAlert = true
             }, label: {
                 Text("Book Destination".uppercased())
                     .font(.system(.subheadline, design: .rounded))
