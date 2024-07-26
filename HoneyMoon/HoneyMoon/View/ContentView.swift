@@ -14,12 +14,21 @@ struct ContentView: View {
     @State var showInfoView = false
     @GestureState private var dragState = DragState.inactive
     private var dragAreaThreshold = 65.0
+    @State private var lastCardIndex = 1
     
-    var cardViews: [CardView] = {
+    @State var cardViews: [CardView] = {
         honeyMoonData.prefix(2).map {
             CardView(honeyMoon: $0)
         }
     }()
+    
+    private func moveCards() {
+        cardViews.removeFirst()
+        lastCardIndex += 1
+        let honeyMoon = honeyMoonData[lastCardIndex % honeyMoonData.count]
+        let newCardView = CardView(honeyMoon: honeyMoon)
+        cardViews.append(newCardView)
+    }
     
     private func isTopCard(cardView: CardView) -> Bool {
         guard let index = cardViews.firstIndex(where: { $0.id == cardView.id }) else {
@@ -91,6 +100,15 @@ struct ContentView: View {
                                         state = .dragging(translation: drag?.translation ?? .zero)
                                     default:
                                         break
+                                    }
+                                })
+                                .onEnded({ value in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    
+                                    if drag.translation.width < -dragAreaThreshold || drag.translation.width > dragAreaThreshold {
+                                        moveCards()
                                     }
                                 })
                         )
