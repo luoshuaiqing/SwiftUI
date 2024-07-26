@@ -22,6 +22,7 @@
 		581773282C53295E00C8E4D1 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773272C53295E00C8E4D1 /* InfoView.swift */; };
 		5817732A2C532AE500C8E4D1 /* TitleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773292C532AE500C8E4D1 /* TitleModifier.swift */; };
 		5817732C2C532C0500C8E4D1 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817732B2C532C0500C8E4D1 /* ButtonModifier.swift */; };
+		5817732F2C54008200C8E4D1 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817732E2C54008200C8E4D1 /* SymbolModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		581773272C53295E00C8E4D1 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		581773292C532AE500C8E4D1 /* TitleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModifier.swift; sourceTree = "<group>"; };
 		5817732B2C532C0500C8E4D1 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		5817732E2C54008200C8E4D1 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			children = (
 				581773292C532AE500C8E4D1 /* TitleModifier.swift */,
 				5817732B2C532C0500C8E4D1 /* ButtonModifier.swift */,
+				5817732E2C54008200C8E4D1 /* SymbolModifier.swift */,
 			);
 			path = Modifier;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				5809ACE72C52D72800FC0497 /* ContentView.swift in Sources */,
 				581773242C52EA3000C8E4D1 /* GuideComponent.swift in Sources */,
 				5817730C2C52DEB900C8E4D1 /* HoneyMoonModel.swift in Sources */,
+				5817732F2C54008200C8E4D1 /* SymbolModifier.swift in Sources */,
 				5817732A2C532AE500C8E4D1 /* TitleModifier.swift in Sources */,
 				581773282C53295E00C8E4D1 /* InfoView.swift in Sources */,
 				581773192C52DFDA00C8E4D1 /* CardView.swift in Sources */,
