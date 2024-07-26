@@ -52,6 +52,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             HeaderView(showGuideView: $showGuideView, showInfoView: $showInfoView)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default, value: UUID())
             
             Spacer()
             
@@ -66,6 +68,8 @@ struct ContentView: View {
             Spacer()
             
             FooterView(showBookingAlert: $showBookingAlert)
+                .opacity(dragState.isDragging ? 0.0 : 1.0)
+                .animation(.default, value: UUID())
         }
         .alert(isPresented: $showBookingAlert, content: {
             Alert(
