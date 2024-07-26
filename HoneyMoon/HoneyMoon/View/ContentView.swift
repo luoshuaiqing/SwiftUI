@@ -61,6 +61,20 @@ struct ContentView: View {
                 ForEach(cardViews) {
                     $0
                         .zIndex(isTopCard(cardView: $0) ? 1 : 0)
+                        .gesture(
+                            LongPressGesture(minimumDuration: 0.01)
+                                .sequenced(before: DragGesture())
+                                .updating($dragState, body: { value, state, transaction in
+                                    switch value {
+                                    case .first(true):
+                                        state = .pressing
+                                    case .second(true, let drag):
+                                        state = .dragging(translation: drag?.translation ?? .zero)
+                                    default:
+                                        break
+                                    }
+                                })
+                        )
                 }
             }
             .padding(.horizontal)
