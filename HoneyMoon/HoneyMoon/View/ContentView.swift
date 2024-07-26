@@ -61,6 +61,7 @@ struct ContentView: View {
                 ForEach(cardViews) {
                     $0
                         .zIndex(isTopCard(cardView: $0) ? 1 : 0)
+                        .offset(x: dragState.translation.width, y: dragState.translation.height)
                         .gesture(
                             LongPressGesture(minimumDuration: 0.01)
                                 .sequenced(before: DragGesture())
