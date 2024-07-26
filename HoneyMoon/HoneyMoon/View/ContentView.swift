@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+
     @State var showBookingAlert = false
     @State var showGuideView = false
     @State var showInfoView = false
+    @GestureState private var dragState = DragState.inactive
     
     var cardViews: [CardView] = {
         honeyMoonData.map {
@@ -24,6 +25,28 @@ struct ContentView: View {
             return false
         }
         return index == 0
+    }
+    
+    enum DragState {
+        case inactive
+        case pressing
+        case dragging(translation: CGSize)
+        
+        var translation: CGSize {
+            switch self {
+            case .inactive, .pressing:
+                return .zero
+            case let .dragging(translation):
+                return translation
+            }
+        }
+        
+        var isDragging: Bool {
+            if case .dragging = self {
+                return true
+            }
+            return false
+        }
     }
     
     var body: some View {
