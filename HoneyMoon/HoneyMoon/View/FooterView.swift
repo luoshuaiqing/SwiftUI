@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct FooterView: View {
+    
+    @Binding var showBookingAlert: Bool
+    
     var body: some View {
         HStack {
             Image(systemName: "xmark.circle")
@@ -39,5 +42,5 @@ struct FooterView: View {
 }
 
 #Preview {
-    FooterView()
+    FooterView(showBookingAlert: .constant(false))
 }
