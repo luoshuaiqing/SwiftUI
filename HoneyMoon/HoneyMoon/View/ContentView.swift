@@ -15,13 +15,13 @@ struct ContentView: View {
     @GestureState private var dragState = DragState.inactive
     
     var cardViews: [CardView] = {
-        honeyMoonData.map {
+        honeyMoonData.prefix(2).map {
             CardView(honeyMoon: $0)
         }
     }()
     
     private func isTopCard(cardView: CardView) -> Bool {
-        guard let index = cardViews.prefix(2).firstIndex(where: { $0.id == cardView.id }) else {
+        guard let index = cardViews.firstIndex(where: { $0.id == cardView.id }) else {
             return false
         }
         return index == 0
