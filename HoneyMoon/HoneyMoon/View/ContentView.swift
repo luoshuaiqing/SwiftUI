@@ -13,14 +13,24 @@ struct ContentView: View {
     @State var showGuideView = false
     @State var showInfoView = false
     
+    var cardViews: [CardView] = {
+        honeyMoonData.map {
+            CardView(honeyMoon: $0)
+        }
+    }()
+    
     var body: some View {
         VStack {
             HeaderView(showGuideView: $showGuideView, showInfoView: $showInfoView)
             
             Spacer()
             
-            CardView(honeyMoon: honeyMoonData[1])
-                .padding()
+            ZStack {
+                ForEach(cardViews) {
+                    $0
+                }
+            }
+            .padding(.horizontal)
             
             Spacer()
             
