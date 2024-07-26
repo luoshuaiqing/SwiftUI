@@ -15,6 +15,7 @@ struct ContentView: View {
     @GestureState private var dragState = DragState.inactive
     private var dragAreaThreshold = 65.0
     @State private var lastCardIndex = 1
+    @State private var cardRemovalTransition: AnyTransition?
     
     @State var cardViews: [CardView] = {
         honeyMoonData.prefix(2).map {
@@ -102,6 +103,17 @@ struct ContentView: View {
                                         break
                                     }
                                 })
+                                .onChanged({ value in
+                                    guard case .second(true, let drag?) = value else {
+                                        return
+                                    }
+                                    
+                                    if drag.translation.width < -dragAreaThreshold {
+                                        cardRemovalTransition = .leadingBottom
+                                    } else if drag.translation.width > dragAreaThreshold {
+                                        cardRemovalTransition = .trailingBottom
+                                    }
+                                })
                                 .onEnded({ value in
                                     guard case .second(true, let drag?) = value else {
                                         return
@@ -112,6 +124,7 @@ struct ContentView: View {
                                     }
                                 })
                         )
+                        .transition(cardRemovalTransition ?? .identity)
                 }
             }
             .padding(.horizontal)
