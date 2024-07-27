@@ -1,5 +1,5 @@
 //
-//  AddEmailView.swift
+//  CompleteSignUpView.swift
 //  InstagramClone
 //
 //  Created by Shuaiqing Luo on 7/27/24.
@@ -7,32 +7,29 @@
 
 import SwiftUI
 
-struct AddEmailView: View {
+struct CompleteSignUpView: View {
     
-    @State private var email = ""
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 12) {
-            Text("Add your email")
+            Spacer()
+            
+            Text("Welcome to Instagram!")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
+                .multilineTextAlignment(.center)
 
-            Text("You'll use this email to sign in to your account")
+            Text("Click below to complete registration and start using Instagram")
                 .font(.footnote)
-                .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            TextField("Email", text: $email)
-                .autocapitalization(.none)
-                .modifier(IGTextFieldModifier())
-            
-            NavigationLink {
-                CreateUsernameView().navigationBarBackButtonHidden()
+            Button {
+                
             } label: {
-                Text("Next")
+                Text("Complete Sign Up")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundStyle(.white)
@@ -54,8 +51,9 @@ struct AddEmailView: View {
             }
         }
     }
+
 }
 
 #Preview {
-    AddEmailView()
+    CompleteSignUpView()
 }

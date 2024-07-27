@@ -19,7 +19,7 @@ struct CreateUsernameView: View {
                 .fontWeight(.bold)
                 .padding(.top)
 
-            Text("You'll use this email to sign in to your account")
+            Text("Your username!")
                 .font(.footnote)
                 .foregroundStyle(.gray)
                 .multilineTextAlignment(.center)
@@ -30,7 +30,7 @@ struct CreateUsernameView: View {
                 .modifier(IGTextFieldModifier())
             
             NavigationLink {
-                CreateUsernameView()
+                CreatePasswordView()
                     .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
