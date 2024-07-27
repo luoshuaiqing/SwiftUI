@@ -29,6 +29,7 @@
 		5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773792C55742200C8E4D1 /* PostGridView.swift */; };
 		5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */; };
 		5817737E2C5598A200C8E4D1 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737D2C5598A200C8E4D1 /* UploadPostView.swift */; };
+		581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		581773792C55742200C8E4D1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		5817737D2C5598A200C8E4D1 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				5817737D2C5598A200C8E4D1 /* UploadPostView.swift */,
+				5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				5817736A2C554A7900C8E4D1 /* AddEmailView.swift in Sources */,
 				5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */,
 				5817736E2C554C9C00C8E4D1 /* CreateUsernameView.swift in Sources */,
+				581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */,
 				5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */,
 				581773722C554E6000C8E4D1 /* CompleteSignUpView.swift in Sources */,
 				581773742C554FC800C8E4D1 /* User.swift in Sources */,
