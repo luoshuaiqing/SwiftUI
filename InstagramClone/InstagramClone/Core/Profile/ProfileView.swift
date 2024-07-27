@@ -83,6 +83,16 @@ struct ProfileView: View {
             }
             .navigationTitle("Profile")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        
+                    }, label: {
+                        Image(systemName: "line.3.horizontal")
+                            .foregroundColor(.black)
+                    })
+                }
+            }
         }
     }
 }
