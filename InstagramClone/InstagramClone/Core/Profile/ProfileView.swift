@@ -11,7 +11,7 @@ struct ProfileView: View {
     var body: some View {
         VStack {
             // header
-            VStack {
+            VStack(spacing: 10) {
                 // pic and stats
                 HStack {
                     Image("placeholder-ironman")
