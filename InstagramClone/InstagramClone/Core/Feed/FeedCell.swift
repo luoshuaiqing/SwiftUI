@@ -24,7 +24,7 @@ struct FeedCell: View {
                 
                 Spacer()
             }
-            .padding(.leading)
+            .padding(.leading, 12)
             
             // post image
             Image("placeholder-ironman")
@@ -45,21 +45,48 @@ struct FeedCell: View {
                 Button(action: {
                     
                 }, label: {
-                    Image(systemName: "heart")
+                    Image(systemName: "bubble.right")
                         .imageScale(.large)
                 })
                 
                 Button(action: {
                     
                 }, label: {
-                    Image(systemName: "heart")
+                    Image(systemName: "paperplane")
                         .imageScale(.large)
                 })
+                
+                Spacer()
             }
+            .padding(.leading, 8)
+            .padding(.top, 4)
+            .foregroundStyle(.black)
             
             // likes label
+            Text("23 likes")
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
             
             // caption label
+            HStack {
+                Text("batman ").fontWeight(.semibold)
+                +
+                Text("This is some test caption for now")
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .font(.footnote)
+            .padding(.leading, 10)
+            .padding(.top, 1)
+            
+            Text("6h ago")
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.leading, 10)
+                .padding(.top, 1)
+                .foregroundStyle(.gray)
         }
     }
 }
