@@ -19,7 +19,9 @@ struct UploadPostView: View {
             // action tool bar
             HStack {
                 Button(action: {
-                    
+                    caption = ""
+                    viewModel.selectedImage = nil
+                    viewModel.postImage = nil
                 }, label: {
                     Text("Cancel")
                 })
@@ -46,6 +48,7 @@ struct UploadPostView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 100, height: 100)
+                        .clipped()
                 }
                 TextField("Enter your caption", text: $caption, axis: .vertical)
             }
