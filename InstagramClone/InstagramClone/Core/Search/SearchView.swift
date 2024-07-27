@@ -24,10 +24,12 @@ struct SearchView: View {
                                 .clipShape(.circle)
                             
                             VStack(alignment: .leading, content: {
-                                Text("batman")
+                                Text(user.username)
                                     .fontWeight(.semibold)
                                 
-                                Text("Bruce Wayne")
+                                if let fullname = user.fullname {
+                                    Text(fullname)
+                                }
                             })
                             .font(.footnote)
                             
