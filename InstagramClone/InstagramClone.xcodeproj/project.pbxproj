@@ -24,6 +24,7 @@
 		581773702C554DE000C8E4D1 /* CreatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817736F2C554DE000C8E4D1 /* CreatePasswordView.swift */; };
 		581773722C554E6000C8E4D1 /* CompleteSignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773712C554E6000C8E4D1 /* CompleteSignUpView.swift */; };
 		581773742C554FC800C8E4D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773732C554FC800C8E4D1 /* User.swift */; };
+		581773762C55689600C8E4D1 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773752C55689600C8E4D1 /* CurrentUserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		5817736F2C554DE000C8E4D1 /* CreatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePasswordView.swift; sourceTree = "<group>"; };
 		581773712C554E6000C8E4D1 /* CompleteSignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteSignUpView.swift; sourceTree = "<group>"; };
 		581773732C554FC800C8E4D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		581773752C55689600C8E4D1 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				5817735C2C5487CB00C8E4D1 /* ProfileView.swift */,
+				581773752C55689600C8E4D1 /* CurrentUserProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				581773422C5485CB00C8E4D1 /* ContentView.swift in Sources */,
 				581773682C5545D000C8E4D1 /* LoginView.swift in Sources */,
 				581773402C5485CB00C8E4D1 /* InstagramCloneApp.swift in Sources */,
+				581773762C55689600C8E4D1 /* CurrentUserProfileView.swift in Sources */,
 				5817736A2C554A7900C8E4D1 /* AddEmailView.swift in Sources */,
 				5817736E2C554C9C00C8E4D1 /* CreateUsernameView.swift in Sources */,
 				581773722C554E6000C8E4D1 /* CompleteSignUpView.swift in Sources */,
