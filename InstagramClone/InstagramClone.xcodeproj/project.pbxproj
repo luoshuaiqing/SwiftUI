@@ -27,6 +27,7 @@
 		581773762C55689600C8E4D1 /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773752C55689600C8E4D1 /* CurrentUserProfileView.swift */; };
 		581773782C556C4C00C8E4D1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773772C556C4C00C8E4D1 /* Post.swift */; };
 		5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581773792C55742200C8E4D1 /* PostGridView.swift */; };
+		5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		581773752C55689600C8E4D1 /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
 		581773772C556C4C00C8E4D1 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		581773792C55742200C8E4D1 /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				5817735C2C5487CB00C8E4D1 /* ProfileView.swift */,
 				581773752C55689600C8E4D1 /* CurrentUserProfileView.swift */,
+				5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				5817736A2C554A7900C8E4D1 /* AddEmailView.swift in Sources */,
 				5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */,
 				5817736E2C554C9C00C8E4D1 /* CreateUsernameView.swift in Sources */,
+				5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */,
 				581773722C554E6000C8E4D1 /* CompleteSignUpView.swift in Sources */,
 				581773742C554FC800C8E4D1 /* User.swift in Sources */,
 				581773662C54A7D500C8E4D1 /* SearchView.swift in Sources */,
