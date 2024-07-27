@@ -44,6 +44,7 @@ struct UploadPostView: View {
                 if let image = viewModel.postImage {
                     image
                         .resizable()
+                        .scaledToFill()
                         .frame(width: 100, height: 100)
                 }
                 TextField("Enter your caption", text: $caption, axis: .vertical)
