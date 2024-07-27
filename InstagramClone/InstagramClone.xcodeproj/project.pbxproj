@@ -12,6 +12,7 @@
 		581773442C5485CD00C8E4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581773432C5485CD00C8E4D1 /* Assets.xcassets */; };
 		581773472C5485CD00C8E4D1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581773462C5485CD00C8E4D1 /* Preview Assets.xcassets */; };
 		5817735B2C5486EF00C8E4D1 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817735A2C5486EF00C8E4D1 /* MainTabView.swift */; };
+		5817735D2C5487CB00C8E4D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817735C2C5487CB00C8E4D1 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		581773432C5485CD00C8E4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		581773462C5485CD00C8E4D1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5817735A2C5486EF00C8E4D1 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5817735C2C5487CB00C8E4D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		581773552C5486A100C8E4D1 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				5817735C2C5487CB00C8E4D1 /* ProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5817735D2C5487CB00C8E4D1 /* ProfileView.swift in Sources */,
 				581773422C5485CB00C8E4D1 /* ContentView.swift in Sources */,
 				581773402C5485CB00C8E4D1 /* InstagramCloneApp.swift in Sources */,
 				5817735B2C5486EF00C8E4D1 /* MainTabView.swift in Sources */,
