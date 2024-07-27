@@ -19,7 +19,42 @@ struct ProfileView: View {
                         .scaledToFill()
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
+                    
+                    Spacer()
+                    
+                    HStack(spacing: 8) {
+                        VStack {
+                            Text("3")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Text("Posts")
+                                .font(.footnote)
+                        }
+                        .frame(width: 72)
+                        
+                        VStack {
+                            Text("3")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Text("Followers")
+                                .font(.footnote)
+                        }
+                        .frame(width: 72)
+                        
+                        VStack {
+                            Text("3")
+                                .font(.subheadline)
+                                .fontWeight(.semibold)
+                            
+                            Text("Following")
+                                .font(.footnote)
+                        }
+                        .frame(width: 72)
+                    }
                 }
+                .padding(.horizontal)
                 
                 // name and bio
                 VStack(alignment: .leading, spacing: 4) {
