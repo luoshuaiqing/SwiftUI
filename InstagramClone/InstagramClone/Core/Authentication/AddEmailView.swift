@@ -10,6 +10,7 @@ import SwiftUI
 struct AddEmailView: View {
     
     @State private var email = ""
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 12) {
@@ -52,6 +53,9 @@ struct AddEmailView: View {
             ToolbarItem(placement: .topBarLeading) {
                 Image(systemName: "chevron.left")
                     .imageScale(.large)
+                    .onTapGesture {
+                        dismiss()
+                    }
             }
         }
     }
