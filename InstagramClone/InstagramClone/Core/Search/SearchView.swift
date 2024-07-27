@@ -15,9 +15,9 @@ struct SearchView: View {
         NavigationStack {
             ScrollView {
                 LazyVStack(spacing: 12) {
-                    ForEach(0...15, id: \.self) { user in
+                    ForEach(User.MOCK_USERS) { user in
                         HStack {
-                            Image("placeholder-ironman")
+                            Image(user.profileImageUrl ?? "")
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: 40, height: 40)
