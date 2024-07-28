@@ -36,6 +36,7 @@
 		581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */; };
 		5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */; };
 		5817738F2C55CD2F00C8E4D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817738E2C55CD2F00C8E4D1 /* AuthService.swift */; };
+		581AE3552C55CE3100AC4E52 /* Root in Resources */ = {isa = PBXBuildFile; fileRef = 581AE3542C55CE3100AC4E52 /* Root */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5817738E2C55CD2F00C8E4D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		581AE3542C55CE3100AC4E52 /* Root */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Root; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		581773512C54867E00C8E4D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				581AE3542C55CE3100AC4E52 /* Root */,
 				5817735E2C54A0B100C8E4D1 /* Components */,
 				581773592C5486B800C8E4D1 /* UploadPost */,
 				581773582C5486B400C8E4D1 /* TabBar */,
@@ -325,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581AE3552C55CE3100AC4E52 /* Root in Resources */,
 				581773472C5485CD00C8E4D1 /* Preview Assets.xcassets in Resources */,
 				581773442C5485CD00C8E4D1 /* Assets.xcassets in Resources */,
 				581773822C55CBB700C8E4D1 /* GoogleService-Info.plist in Resources */,
