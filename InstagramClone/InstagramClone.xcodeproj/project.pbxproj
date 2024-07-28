@@ -42,6 +42,8 @@
 		58BEB27E2C56CA37008A026C /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEB27D2C56CA37008A026C /* EditProfileView.swift */; };
 		58BEB2822C56CDDA008A026C /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEB2812C56CDDA008A026C /* EditProfileViewModel.swift */; };
 		58BEB2842C57055D008A026C /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEB2832C57055D008A026C /* ImageUploader.swift */; };
+		58BEB2872C5708D1008A026C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 58BEB2862C5708D1008A026C /* Kingfisher */; };
+		58BEB2892C570934008A026C /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEB2882C570934008A026C /* CircularProfileImageView.swift */; };
 		58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */; };
 		58EBA51E2C55D1C80030673C /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,7 @@
 		58BEB27D2C56CA37008A026C /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		58BEB2812C56CDDA008A026C /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		58BEB2832C57055D008A026C /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		58BEB2882C570934008A026C /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 		58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +95,7 @@
 				5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */,
 				581773872C55CC1E00C8E4D1 /* FirebaseFirestore in Frameworks */,
 				581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */,
+				58BEB2872C5708D1008A026C /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +241,7 @@
 				5817735F2C54A0C000C8E4D1 /* UserStatView.swift */,
 				5817736B2C554C1300C8E4D1 /* IGTextFieldModifier.swift */,
 				581773792C55742200C8E4D1 /* PostGridView.swift */,
+				58BEB2882C570934008A026C /* CircularProfileImageView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 				581773862C55CC1E00C8E4D1 /* FirebaseFirestore */,
 				581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */,
 				5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */,
+				58BEB2862C5708D1008A026C /* Kingfisher */,
 			);
 			productName = InstagramClone;
 			productReference = 5817733C2C5485CB00C8E4D1 /* InstagramClone.app */;
@@ -382,6 +388,7 @@
 			mainGroup = 581773332C5485CB00C8E4D1;
 			packageReferences = (
 				581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				58BEB2852C5708D1008A026C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 5817733D2C5485CB00C8E4D1 /* Products */;
 			projectDirPath = "";
@@ -437,6 +444,7 @@
 				5817736C2C554C1300C8E4D1 /* IGTextFieldModifier.swift in Sources */,
 				581773602C54A0C000C8E4D1 /* UserStatView.swift in Sources */,
 				581773622C54A36700C8E4D1 /* FeedView.swift in Sources */,
+				58BEB2892C570934008A026C /* CircularProfileImageView.swift in Sources */,
 				58BEB27C2C56C5A7008A026C /* SearchViewModel.swift in Sources */,
 				5817735B2C5486EF00C8E4D1 /* MainTabView.swift in Sources */,
 				581773702C554DE000C8E4D1 /* CreatePasswordView.swift in Sources */,
@@ -655,6 +663,14 @@
 				minimumVersion = 10.29.0;
 			};
 		};
+		58BEB2852C5708D1008A026C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -677,6 +693,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		58BEB2862C5708D1008A026C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58BEB2852C5708D1008A026C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
