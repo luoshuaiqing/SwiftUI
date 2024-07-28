@@ -35,7 +35,11 @@ class UploadPostViewModel {
     func uploadPost(caption: String) async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         guard let uiImage else { return }
-        
-        let post = Post(id: "", ownerUid: uid, caption: caption, likes: 0, imageUrl: "", timestamp: Timestamp())
+
+        let postRef = Firestore.firestore().collection("posts").document()
+        guard let imageUrl = try await ImageUploader.uploadImage(image: uiImage) else { return }
+        let post = Post(id: postRef.documentID, ownerUid: uid, caption: caption, likes: 0, imageUrl: "", timestamp: Timestamp())
+        let encodedPost = try Firestore.Encoder().encode(post)
+        try await postRef.setData(encodedPost)
     }
 }
