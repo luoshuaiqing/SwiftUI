@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
+    @State private var selectedImage: PhotosPickerItem?
     
     var body: some View {
         VStack {
@@ -42,6 +44,24 @@ struct EditProfileView: View {
             }
             
             // edit profile pic
+            PhotosPicker(selection: $selectedImage) {
+                VStack {
+                    Image(systemName: "person")
+                        .resizable()
+                        .foregroundStyle(.white)
+                        .background(.gray)
+                        .clipShape(.circle)
+                        .frame(width: 80, height: 80)
+                        .scaledToFit()
+                    
+                    Text("Edit Profile Picture")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    
+                    Divider()
+                }
+            }
+            .padding(.vertical, 8)
             
             // edit profile info
         }
