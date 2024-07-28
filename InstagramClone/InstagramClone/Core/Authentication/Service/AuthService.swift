@@ -8,16 +8,11 @@
 import Foundation
 import FirebaseAuth
 
-@Observable
 class AuthService {
     
-    var userSession: FirebaseAuth.User?
+    @Published var userSession = Auth.auth().currentUser
     
     static let shared = AuthService()
-    
-    init() {
-        userSession = Auth.auth().currentUser
-    }
     
     func login(withEmail email: String, password: String) async throws {
         

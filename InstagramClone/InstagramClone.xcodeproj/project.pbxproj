@@ -36,7 +36,7 @@
 		581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */; };
 		5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */; };
 		5817738F2C55CD2F00C8E4D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817738E2C55CD2F00C8E4D1 /* AuthService.swift */; };
-		581AE3552C55CE3100AC4E52 /* Root in Resources */ = {isa = PBXBuildFile; fileRef = 581AE3542C55CE3100AC4E52 /* Root */; };
+		58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,7 +66,7 @@
 		5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5817738E2C55CD2F00C8E4D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		581AE3542C55CE3100AC4E52 /* Root */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Root; sourceTree = "<group>"; };
+		58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +108,6 @@
 				581773502C54867D00C8E4D1 /* Extension */,
 				5817734F2C54867C00C8E4D1 /* Model */,
 				5817734D2C54866900C8E4D1 /* App */,
-				581773412C5485CB00C8E4D1 /* ContentView.swift */,
 				581773432C5485CD00C8E4D1 /* Assets.xcassets */,
 				581773452C5485CD00C8E4D1 /* Preview Content */,
 				581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */,
@@ -151,7 +150,6 @@
 		581773512C54867E00C8E4D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				581AE3542C55CE3100AC4E52 /* Root */,
 				5817735E2C54A0B100C8E4D1 /* Components */,
 				581773592C5486B800C8E4D1 /* UploadPost */,
 				581773582C5486B400C8E4D1 /* TabBar */,
@@ -202,6 +200,8 @@
 		581773562C5486A500C8E4D1 /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				58EBA5192C55CE650030673C /* ViewModel */,
+				58EBA5182C55CE5F0030673C /* View */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -259,6 +259,22 @@
 				5817738E2C55CD2F00C8E4D1 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		58EBA5182C55CE5F0030673C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				581773412C5485CB00C8E4D1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58EBA5192C55CE650030673C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +344,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				581AE3552C55CE3100AC4E52 /* Root in Resources */,
 				581773472C5485CD00C8E4D1 /* Preview Assets.xcassets in Resources */,
 				581773442C5485CD00C8E4D1 /* Assets.xcassets in Resources */,
 				581773822C55CBB700C8E4D1 /* GoogleService-Info.plist in Resources */,
@@ -354,6 +369,7 @@
 				5817736A2C554A7900C8E4D1 /* AddEmailView.swift in Sources */,
 				5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */,
 				5817736E2C554C9C00C8E4D1 /* CreateUsernameView.swift in Sources */,
+				58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */,
 				581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */,
 				5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */,
 				581773722C554E6000C8E4D1 /* CompleteSignUpView.swift in Sources */,
