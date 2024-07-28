@@ -36,7 +36,7 @@ class EditProfileViewModel {
         guard let item else { return }
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let image = UIImage(data: data) else { return }
-        self.uiImage = uiImage
+        self.uiImage = image
         profileImage = Image(uiImage: image)
     }
     

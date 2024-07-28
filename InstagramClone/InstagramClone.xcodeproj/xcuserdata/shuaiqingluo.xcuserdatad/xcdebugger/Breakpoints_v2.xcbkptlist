@@ -116,5 +116,65 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6B12CFE-C51F-42DE-92BC-524AB4DDC96F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InstagramClone/Core/Profile/ViewModel/EditProfileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "updateUserData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C6B12CFE-C51F-42DE-92BC-524AB4DDC96F - 46480e62b917c455"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for InstagramClone.EditProfileViewModel.updateUserData() async throws -&gt; ()"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuaiqingluo/Dev/SwiftUI/InstagramClone/InstagramClone/Core/Profile/ViewModel/EditProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+               <Location
+                  uuid = "C6B12CFE-C51F-42DE-92BC-524AB4DDC96F - 2fafd5b5f12f9853"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for InstagramClone.EditProfileViewModel.updateUserData() async throws -&gt; ()"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuaiqingluo/Dev/SwiftUI/InstagramClone/InstagramClone/Core/Profile/ViewModel/EditProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+               <Location
+                  uuid = "C6B12CFE-C51F-42DE-92BC-524AB4DDC96F - 2657d79bcd723e50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for InstagramClone.EditProfileViewModel.updateUserData() async throws -&gt; ()"
+                  moduleName = "InstagramClone"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shuaiqingluo/Dev/SwiftUI/InstagramClone/InstagramClone/Core/Profile/ViewModel/EditProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
