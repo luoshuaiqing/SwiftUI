@@ -64,7 +64,7 @@ struct ProfileHeaderView: View {
                     .foregroundColor(user.isCurrentUser ? .black : .white)
                     .overlay {
                         RoundedRectangle(cornerRadius: 6)
-                            .stroke(.gray, lineWidth: 1)
+                            .stroke(user.isCurrentUser ? .gray : .clear, lineWidth: 1)
                     }
             })
             .padding(.horizontal)
