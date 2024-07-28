@@ -11,6 +11,7 @@ struct LoginView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @State private var registrationViewModel = RegistrationViewModel()
     
     var body: some View {
         NavigationStack {
@@ -88,6 +89,7 @@ struct LoginView: View {
                 NavigationLink {
                     AddEmailView()
                         .navigationBarBackButtonHidden()
+                        .environment(registrationViewModel)
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account?")
