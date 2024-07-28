@@ -53,7 +53,11 @@ struct ProfileHeaderView: View {
             
             // action button
             Button(action: {
-                
+                if user.isCurrentUser {
+                    
+                } else {
+                    
+                }
             }, label: {
                 Text(user.isCurrentUser ? "Edit Profile" : "Follow")
                     .font(.subheadline)
@@ -62,6 +66,7 @@ struct ProfileHeaderView: View {
                     .frame(maxWidth: .infinity)
                     .background(user.isCurrentUser ? .white : .blue)
                     .foregroundColor(user.isCurrentUser ? .black : .white)
+                    .cornerRadius(6)
                     .overlay {
                         RoundedRectangle(cornerRadius: 6)
                             .stroke(user.isCurrentUser ? .gray : .clear, lineWidth: 1)
