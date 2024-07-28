@@ -11,9 +11,7 @@ import PhotosUI
 struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State private var selectedImage: PhotosPickerItem?
-    @State private var fullname = ""
-    @State private var bio = ""
+    @State var viewModel = EditProfileViewModel()
     
     var body: some View {
         VStack {
@@ -46,7 +44,7 @@ struct EditProfileView: View {
             }
             
             // edit profile pic
-            PhotosPicker(selection: $selectedImage) {
+            PhotosPicker(selection: $viewModel.selectedImage) {
                 VStack {
                     Image(systemName: "person")
                         .resizable()
@@ -67,9 +65,9 @@ struct EditProfileView: View {
             
             // edit profile info
             VStack {
-                EditProfileRowView(title: "Name", placeholder: "Enter your name..", text: $fullname)
+                EditProfileRowView(title: "Name", placeholder: "Enter your name..", text: $viewModel.fullname)
                 
-                EditProfileRowView(title: "Bio", placeholder: "Enter your bio..", text: $bio)
+                EditProfileRowView(title: "Bio", placeholder: "Enter your bio..", text: $viewModel.bio)
             }
             
             Spacer()

@@ -12,6 +12,9 @@ import SwiftUI
 
 @Observable
 class EditProfileViewModel {
+    
+    var fullname = ""
+    var bio = ""
     var selectedImage: PhotosPickerItem? {
         didSet {
             Task {
@@ -19,7 +22,6 @@ class EditProfileViewModel {
             }
         }
     }
-    
     var profileImage: Image?
     
     private func loadImage(fromItem item: PhotosPickerItem?) async {
