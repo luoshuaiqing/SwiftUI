@@ -7,6 +7,8 @@
 
 import Foundation
 import FirebaseAuth
+import FirebaseFirestoreSwift
+import Firebase
 
 class AuthService {
     
@@ -21,6 +23,7 @@ class AuthService {
     
     func createUser(email: String, password: String, username: String) async throws {
         let result = try await Auth.auth().createUser(withEmail: email, password: password)
+        await uploadUserData(uid: result.user.uid, username: username, email: email)
         userSession = result.user
     }
     
@@ -36,7 +39,8 @@ class AuthService {
 
 private extension AuthService {
     
-    private func uploadUserData() async {
-        
+    private func uploadUserData(uid: String, username: String, email: String) async {
+        let user = User(id: uid, username: username, email: email)
+        guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
     }
 }
