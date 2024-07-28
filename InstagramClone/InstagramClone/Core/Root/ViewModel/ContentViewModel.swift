@@ -10,7 +10,6 @@ import Firebase
 import Combine
 
 @Observable
-@MainActor
 class ContentViewModel {
     
     private var cancellables = Set<AnyCancellable>()
