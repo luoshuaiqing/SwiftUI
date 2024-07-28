@@ -23,8 +23,10 @@ class AuthService {
     
     func createUser(email: String, password: String, username: String) async throws {
         let result = try await Auth.auth().createUser(withEmail: email, password: password)
-        await uploadUserData(uid: result.user.uid, username: username, email: email)
+        print("DEBUG: Did create user..")
+        try await uploadUserData(uid: result.user.uid, username: username, email: email)
         userSession = result.user
+        print("DEBUG: Did upload user data..")
     }
     
     func loadUserData() async throws {
@@ -39,8 +41,9 @@ class AuthService {
 
 private extension AuthService {
     
-    private func uploadUserData(uid: String, username: String, email: String) async {
+    private func uploadUserData(uid: String, username: String, email: String) async throws {
         let user = User(id: uid, username: username, email: email)
-        guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
+        let encodedUser = try Firestore.Encoder().encode(user)
+        try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
     }
 }
