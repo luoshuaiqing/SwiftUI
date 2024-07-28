@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 import PhotosUI
+import Firebase
 
 @Observable
 class UploadPostViewModel {
@@ -21,11 +22,20 @@ class UploadPostViewModel {
     }
     
     var postImage: Image?
+    private var uiImage: UIImage?
     
     private func loadImage(fromItem item: PhotosPickerItem?) async {
         guard let item else { return }
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let image = UIImage(data: data) else { return }
+        uiImage = image
         postImage = Image(uiImage: image)
+    }
+    
+    func uploadPost(caption: String) async throws {
+        guard let uid = Auth.auth().currentUser?.uid else { return }
+        guard let uiImage else { return }
+        
+        let post = Post(id: "", ownerUid: uid, caption: caption, likes: 0, imageUrl: "", timestamp: Date())
     }
 }
