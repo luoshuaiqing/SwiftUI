@@ -52,6 +52,7 @@ struct UploadPostView: View {
                         .frame(width: 100, height: 100)
                         .clipped()
                 }
+                
                 TextField("Enter your caption", text: $caption, axis: .vertical)
             }
             .padding()

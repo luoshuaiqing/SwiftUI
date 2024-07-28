@@ -30,6 +30,7 @@
 		5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */; };
 		5817737E2C5598A200C8E4D1 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737D2C5598A200C8E4D1 /* UploadPostView.swift */; };
 		581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */; };
+		581773822C55CBB700C8E4D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		5817737B2C5575FF00C8E4D1 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
 		5817737D2C5598A200C8E4D1 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				581773412C5485CB00C8E4D1 /* ContentView.swift */,
 				581773432C5485CD00C8E4D1 /* Assets.xcassets */,
 				581773452C5485CD00C8E4D1 /* Preview Content */,
+				581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */,
 			);
 			path = InstagramClone;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			files = (
 				581773472C5485CD00C8E4D1 /* Preview Assets.xcassets in Resources */,
 				581773442C5485CD00C8E4D1 /* Assets.xcassets in Resources */,
+				581773822C55CBB700C8E4D1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
