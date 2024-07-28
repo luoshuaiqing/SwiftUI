@@ -105,9 +105,7 @@
 		5817733E2C5485CB00C8E4D1 /* InstagramClone */ = {
 			isa = PBXGroup;
 			children = (
-				581773522C54867F00C8E4D1 /* Services */,
 				581773512C54867E00C8E4D1 /* Core */,
-				581773502C54867D00C8E4D1 /* Extension */,
 				5817734F2C54867C00C8E4D1 /* Model */,
 				5817734D2C54866900C8E4D1 /* App */,
 				581773432C5485CD00C8E4D1 /* Assets.xcassets */,
@@ -142,13 +140,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		581773502C54867D00C8E4D1 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
 		581773512C54867E00C8E4D1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,13 +153,6 @@
 				581773532C54869400C8E4D1 /* Authentication */,
 			);
 			path = Core;
-			sourceTree = "<group>";
-		};
-		581773522C54867F00C8E4D1 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		581773532C54869400C8E4D1 /* Authentication */ = {
