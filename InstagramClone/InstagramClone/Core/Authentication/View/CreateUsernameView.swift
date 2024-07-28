@@ -10,7 +10,7 @@ import SwiftUI
 struct CreateUsernameView: View {
     
     @Environment(\.dismiss) var dismiss
-    @Environment(RegistrationViewModel.self) private var viewModel: RegistrationViewModel
+    @Environment(RegistrationViewModel.self) private var viewModel
     
     var body: some View {
         @Bindable var viewModel = viewModel

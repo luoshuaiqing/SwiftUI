@@ -13,6 +13,10 @@ class RegistrationViewModel {
     var email = ""
     var password = ""
     
+    init() {
+        
+    }
+    
     func createUser() async throws {
         try await AuthService.shared.createUser(email: email, password: password, username: username)
     }
