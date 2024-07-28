@@ -31,6 +31,10 @@
 		5817737E2C5598A200C8E4D1 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737D2C5598A200C8E4D1 /* UploadPostView.swift */; };
 		581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */; };
 		581773822C55CBB700C8E4D1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */; };
+		581773852C55CC1E00C8E4D1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 581773842C55CC1E00C8E4D1 /* FirebaseAuth */; };
+		581773872C55CC1E00C8E4D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 581773862C55CC1E00C8E4D1 /* FirebaseFirestore */; };
+		581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */; };
+		5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				581773852C55CC1E00C8E4D1 /* FirebaseAuth in Frameworks */,
+				5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */,
+				581773872C55CC1E00C8E4D1 /* FirebaseFirestore in Frameworks */,
+				581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +255,12 @@
 			dependencies = (
 			);
 			name = InstagramClone;
+			packageProductDependencies = (
+				581773842C55CC1E00C8E4D1 /* FirebaseAuth */,
+				581773862C55CC1E00C8E4D1 /* FirebaseFirestore */,
+				581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */,
+				5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */,
+			);
 			productName = InstagramClone;
 			productReference = 5817733C2C5485CB00C8E4D1 /* InstagramClone.app */;
 			productType = "com.apple.product-type.application";
@@ -275,6 +289,9 @@
 				Base,
 			);
 			mainGroup = 581773332C5485CB00C8E4D1;
+			packageReferences = (
+				581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 5817733D2C5485CB00C8E4D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -528,6 +545,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.29.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		581773842C55CC1E00C8E4D1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		581773862C55CC1E00C8E4D1 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 581773832C55CC1E00C8E4D1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 581773342C5485CB00C8E4D1 /* Project object */;
 }
