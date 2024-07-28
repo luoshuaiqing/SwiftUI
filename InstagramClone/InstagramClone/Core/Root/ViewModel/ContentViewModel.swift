@@ -10,17 +10,14 @@ import Firebase
 import Combine
 
 @Observable
-@MainActor
 class ContentViewModel {
     
     private var cancellables = Set<AnyCancellable>()
     
     var userSession: FirebaseAuth.User?
     
-    nonisolated init() {
-        Task {
-            await setupSubscribers()
-        }
+    init() {
+        setupSubscribers()
     }
     
     private func setupSubscribers() {
