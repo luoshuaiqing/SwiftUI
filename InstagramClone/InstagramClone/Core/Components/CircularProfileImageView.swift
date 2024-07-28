@@ -38,12 +38,12 @@ struct CircularProfileImageView: View {
             KFImage(URL(string: imageUrl))
                 .resizable()
                 .scaledToFill()
-                .frame(width: 80, height: 80)
+                .frame(width: size.dimension, height: size.dimension)
                 .clipShape(.circle)
         } else {
             Image(systemName: "person.circle.fill")
                 .resizable()
-                .frame(width: 80, height: 80)
+                .frame(width: size.dimension, height: size.dimension)
                 .clipShape(.circle)
                 .foregroundStyle(.gray)
         }
