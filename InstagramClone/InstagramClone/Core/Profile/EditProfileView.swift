@@ -12,6 +12,8 @@ struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
     @State private var selectedImage: PhotosPickerItem?
+    @State private var fullname = ""
+    @State private var bio = ""
     
     var body: some View {
         VStack {
@@ -64,6 +66,11 @@ struct EditProfileView: View {
             .padding(.vertical, 8)
             
             // edit profile info
+            VStack {
+                EditProfileRowView(title: "Name", placeholder: "Enter your name..", text: $fullname)
+                
+                EditProfileRowView(title: "Bio", placeholder: "Enter your bio..", text: $bio)
+            }
         }
     }
 }
