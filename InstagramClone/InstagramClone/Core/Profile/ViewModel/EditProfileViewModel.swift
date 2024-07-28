@@ -13,7 +13,7 @@ import SwiftUI
 @Observable
 class EditProfileViewModel {
     
-    private var user: User
+    var user: User
     
     var fullname = ""
     var bio = ""
