@@ -13,7 +13,7 @@ import SwiftUI
 @Observable
 class EditProfileViewModel {
     
-    private let user: User
+    private var user: User
     
     var fullname = ""
     var bio = ""
@@ -40,11 +40,20 @@ class EditProfileViewModel {
     func updateUserData() async throws {
         // update profile image if changed
         
+        var data = [String: Any]()
+        
         // update name if changed
-        if user.fullname != fullname {
-            
+        if !fullname.isEmpty, user.fullname != fullname {
+            data["fullname"] = fullname
         }
         
         // update bio if changed
+        if !bio.isEmpty, user.bio != bio {
+            data["bio"] = bio
+        }
+        
+        if !data.isEmpty {
+            try await Firestore.firestore().collection("users").document(user.id).updateData(data)
+        }
     }
 }
