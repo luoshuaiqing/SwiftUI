@@ -15,8 +15,8 @@ class EditProfileViewModel {
     
     var user: User
     
-    var fullname = ""
-    var bio = ""
+    var fullname: String
+    var bio: String
     var selectedImage: PhotosPickerItem? {
         didSet {
             Task {
@@ -30,6 +30,8 @@ class EditProfileViewModel {
     
     init(user: User) {
         self.user = user
+        fullname = user.fullname ?? ""
+        bio = user.fullname ?? ""
     }
     
     private func loadImage(fromItem item: PhotosPickerItem?) async {
