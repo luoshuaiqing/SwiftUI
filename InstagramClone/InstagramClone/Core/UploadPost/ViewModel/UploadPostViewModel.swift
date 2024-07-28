@@ -36,6 +36,6 @@ class UploadPostViewModel {
         guard let uid = Auth.auth().currentUser?.uid else { return }
         guard let uiImage else { return }
         
-        let post = Post(id: "", ownerUid: uid, caption: caption, likes: 0, imageUrl: "", timestamp: Date())
+        let post = Post(id: "", ownerUid: uid, caption: caption, likes: 0, imageUrl: "", timestamp: Timestamp())
     }
 }
