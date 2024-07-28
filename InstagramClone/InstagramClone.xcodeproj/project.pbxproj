@@ -36,6 +36,7 @@
 		581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */; };
 		5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */; };
 		5817738F2C55CD2F00C8E4D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817738E2C55CD2F00C8E4D1 /* AuthService.swift */; };
+		58BEB2752C56A179008A026C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BEB2742C56A179008A026C /* LoginViewModel.swift */; };
 		58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */; };
 		58EBA51E2C55D1C80030673C /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5817738E2C55CD2F00C8E4D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		58BEB2742C56A179008A026C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */,
+				58BEB2742C56A179008A026C /* LoginViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */,
 				5817736E2C554C9C00C8E4D1 /* CreateUsernameView.swift in Sources */,
 				58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */,
+				58BEB2752C56A179008A026C /* LoginViewModel.swift in Sources */,
 				58EBA51E2C55D1C80030673C /* RegistrationViewModel.swift in Sources */,
 				581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */,
 				5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */,
