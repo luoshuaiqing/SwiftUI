@@ -71,6 +71,8 @@ struct EditProfileView: View {
                 
                 EditProfileRowView(title: "Bio", placeholder: "Enter your bio..", text: $bio)
             }
+            
+            Spacer()
         }
     }
 }
