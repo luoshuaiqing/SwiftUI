@@ -11,7 +11,11 @@ import PhotosUI
 struct EditProfileView: View {
     
     @Environment(\.dismiss) var dismiss
-    @State var viewModel = EditProfileViewModel()
+    @State var viewModel: EditProfileViewModel
+    
+    init(user: User) {
+        self._viewModel = State(wrappedValue: EditProfileViewModel(user: user))
+    }
     
     var body: some View {
         VStack {
@@ -107,5 +111,5 @@ struct EditProfileRowView: View {
 }
 
 #Preview {
-    EditProfileView()
+    EditProfileView(user: User.MOCK_USERS[0])
 }
