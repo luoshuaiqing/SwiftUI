@@ -13,6 +13,8 @@ struct AddEmailView: View {
     @Environment(RegistrationViewModel.self) private var viewModel: RegistrationViewModel
     
     var body: some View {
+        @Bindable var viewModel = viewModel
+        
         VStack(spacing: 12) {
             Text("Add your email")
                 .font(.title2)
@@ -25,7 +27,6 @@ struct AddEmailView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            @Bindable var viewModel = viewModel
             TextField("Email", text: $viewModel.email)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())

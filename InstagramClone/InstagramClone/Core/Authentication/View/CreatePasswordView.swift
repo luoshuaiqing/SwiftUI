@@ -13,6 +13,8 @@ struct CreatePasswordView: View {
     @Environment(RegistrationViewModel.self) private var viewModel: RegistrationViewModel
     
     var body: some View {
+        @Bindable var viewModel = viewModel
+        
         VStack(spacing: 12) {
             Text("Create a password")
                 .font(.title2)
@@ -25,7 +27,6 @@ struct CreatePasswordView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            @Bindable var viewModel = viewModel
             SecureField("Password", text: $viewModel.password)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())

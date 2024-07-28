@@ -13,6 +13,8 @@ struct CreateUsernameView: View {
     @Environment(RegistrationViewModel.self) private var viewModel: RegistrationViewModel
     
     var body: some View {
+        @Bindable var viewModel = viewModel
+        
         VStack(spacing: 12) {
             Text("Create username")
                 .font(.title2)
@@ -25,7 +27,6 @@ struct CreateUsernameView: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
             
-            @Bindable var viewModel = viewModel
             TextField("Username", text: $viewModel.username)
                 .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
