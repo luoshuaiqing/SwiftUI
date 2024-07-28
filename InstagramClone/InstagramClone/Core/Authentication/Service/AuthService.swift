@@ -15,7 +15,8 @@ class AuthService {
     static let shared = AuthService()
     
     func login(withEmail email: String, password: String) async throws {
-        
+        let result = try await Auth.auth().signIn(withEmail: email, password: password)
+        self.userSession = result.user
     }
     
     func createUser(email: String, password: String, username: String) async throws {
