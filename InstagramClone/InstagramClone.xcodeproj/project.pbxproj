@@ -37,6 +37,7 @@
 		5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */; };
 		5817738F2C55CD2F00C8E4D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817738E2C55CD2F00C8E4D1 /* AuthService.swift */; };
 		58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */; };
+		58EBA51E2C55D1C80030673C /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5817738E2C55CD2F00C8E4D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		58EBA51A2C55CE6F0030673C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		581773532C54869400C8E4D1 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				58EBA51C2C55D1C10030673C /* ViewModel */,
 				5817738D2C55CD1E00C8E4D1 /* Service */,
 				5817738C2C55CD1600C8E4D1 /* View */,
 			);
@@ -277,6 +280,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		58EBA51C2C55D1C10030673C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58EBA51D2C55D1C80030673C /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,6 +381,7 @@
 				5817737A2C55742200C8E4D1 /* PostGridView.swift in Sources */,
 				5817736E2C554C9C00C8E4D1 /* CreateUsernameView.swift in Sources */,
 				58EBA51B2C55CE6F0030673C /* ContentViewModel.swift in Sources */,
+				58EBA51E2C55D1C80030673C /* RegistrationViewModel.swift in Sources */,
 				581773802C559B3200C8E4D1 /* UploadPostViewModel.swift in Sources */,
 				5817737C2C5575FF00C8E4D1 /* ProfileHeaderView.swift in Sources */,
 				581773722C554E6000C8E4D1 /* CompleteSignUpView.swift in Sources */,
