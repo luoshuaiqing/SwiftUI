@@ -35,6 +35,7 @@
 		581773872C55CC1E00C8E4D1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 581773862C55CC1E00C8E4D1 /* FirebaseFirestore */; };
 		581773892C55CC1E00C8E4D1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 581773882C55CC1E00C8E4D1 /* FirebaseFirestoreSwift */; };
 		5817738B2C55CC1E00C8E4D1 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 5817738A2C55CC1E00C8E4D1 /* FirebaseStorage */; };
+		5817738F2C55CD2F00C8E4D1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817738E2C55CD2F00C8E4D1 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		5817737D2C5598A200C8E4D1 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		5817737F2C559B3200C8E4D1 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		581773812C55CBB700C8E4D1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5817738E2C55CD2F00C8E4D1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +171,8 @@
 		581773532C54869400C8E4D1 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				581773672C5545D000C8E4D1 /* LoginView.swift */,
-				581773692C554A7900C8E4D1 /* AddEmailView.swift */,
-				5817736D2C554C9C00C8E4D1 /* CreateUsernameView.swift */,
-				5817736F2C554DE000C8E4D1 /* CreatePasswordView.swift */,
-				581773712C554E6000C8E4D1 /* CompleteSignUpView.swift */,
+				5817738D2C55CD1E00C8E4D1 /* Service */,
+				5817738C2C55CD1600C8E4D1 /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -237,6 +236,26 @@
 				581773792C55742200C8E4D1 /* PostGridView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		5817738C2C55CD1600C8E4D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				581773672C5545D000C8E4D1 /* LoginView.swift */,
+				581773692C554A7900C8E4D1 /* AddEmailView.swift */,
+				5817736D2C554C9C00C8E4D1 /* CreateUsernameView.swift */,
+				5817736F2C554DE000C8E4D1 /* CreatePasswordView.swift */,
+				581773712C554E6000C8E4D1 /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5817738D2C55CD1E00C8E4D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5817738E2C55CD2F00C8E4D1 /* AuthService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +343,7 @@
 				5817735D2C5487CB00C8E4D1 /* ProfileView.swift in Sources */,
 				581773422C5485CB00C8E4D1 /* ContentView.swift in Sources */,
 				581773682C5545D000C8E4D1 /* LoginView.swift in Sources */,
+				5817738F2C55CD2F00C8E4D1 /* AuthService.swift in Sources */,
 				581773782C556C4C00C8E4D1 /* Post.swift in Sources */,
 				581773402C5485CB00C8E4D1 /* InstagramCloneApp.swift in Sources */,
 				581773762C55689600C8E4D1 /* CurrentUserProfileView.swift in Sources */,
