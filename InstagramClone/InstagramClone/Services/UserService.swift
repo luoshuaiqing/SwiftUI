@@ -15,7 +15,8 @@ struct UserService {
         let snapshot = try await Firestore.firestore().collection("users").getDocuments()
         let documents = snapshot.documents
         for doc in documents {
-            print(doc.data())
+            guard let user = try? doc.data(as: User.self) else { continue }
+            users.append(user)
         }
         return users
     }
