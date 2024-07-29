@@ -21,7 +21,7 @@ class PostGridViewModel {
         }
     }
     
-    func fetchUserPosts() async throws {
+    private func fetchUserPosts() async throws {
         posts = try await PostService.fetchUserProfile(uid: user.id)
         
         for i in 0 ..< posts.count {
