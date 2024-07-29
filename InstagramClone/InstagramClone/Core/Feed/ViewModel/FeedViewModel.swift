@@ -24,9 +24,10 @@ class FeedViewModel {
             try $0.data(as: Post.self)
         })
         
-        for post in posts {
-            let ownerUid = post.ownerUid
+        for i in 0 ..< posts.count {
+            let ownerUid = posts[i].ownerUid
             let postUser = try await UserService.fetchUser(with: ownerUid)
+            posts[i].user = postUser
         }
     }
 }
