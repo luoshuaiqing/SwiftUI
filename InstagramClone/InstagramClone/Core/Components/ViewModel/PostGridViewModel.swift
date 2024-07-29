@@ -17,11 +17,11 @@ class PostGridViewModel {
         self.user = user
         
         Task {
-            try await fetchUserPost()
+            try await fetchUserPosts()
         }
     }
     
-    func fetchUserPost() async throws {
+    func fetchUserPosts() async throws {
         posts = try await PostService.fetchUserProfile(uid: user.id)
         
         for i in 0 ..< posts.count {
