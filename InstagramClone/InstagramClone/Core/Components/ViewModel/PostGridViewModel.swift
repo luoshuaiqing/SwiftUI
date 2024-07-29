@@ -25,7 +25,7 @@ class PostGridViewModel {
         posts = try await PostService.fetchUserProfile(uid: user.id)
         
         for i in 0 ..< posts.count {
-            posts[i].user = self.user
+            posts[i].user = user
         }
     }
 }
