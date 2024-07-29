@@ -12,6 +12,12 @@ import Firebase
 class FeedViewModel {
     var posts = [Post]()
     
+    init() {
+        Task {
+            try await fetchPosts()
+        }
+    }
+    
     func fetchPosts() async throws {
         let snapshot = try await Firestore.firestore().collection("posts").getDocuments()
         posts = try snapshot.documents.compactMap({
