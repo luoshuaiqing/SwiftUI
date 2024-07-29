@@ -23,5 +23,10 @@ class FeedViewModel {
         posts = try snapshot.documents.compactMap({
             try $0.data(as: Post.self)
         })
+        
+        for post in posts {
+            let ownerUid = post.ownerUid
+            let postUser = try await UserService.fetchUser(with: ownerUid)
+        }
     }
 }
